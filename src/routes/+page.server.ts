@@ -1,6 +1,15 @@
 import { APE_KEY } from "$env/static/private";
-import type { PageServerLoad } from "./$types';
+import type { PageServerLoad } from "./$types";
 
-export const load: PageServerLoad = () => {
-    console.log(APE_KEY);
-}
+const apekey = "ApeKey " + APE_KEY;
+const endpoint = "https://api.monkeytype.com/users/personalBests/?mode=time";
+const headers = {'Application-Content': 'application/json', 'Authorization': apekey};
+
+export const load: PageServerLoad = (async ({ fetch }) => {
+    const response = await fetch(endpoint, {
+        method: 'GET',
+        headers: headers,
+    });
+    const data = await response.json();
+    return data;
+});
