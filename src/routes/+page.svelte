@@ -1,16 +1,14 @@
 <script lang="ts">
-    import PersonalBests from "../components/PersonalBests.svelte";
     import type { PageServerData } from "./$types";
+    import PersonalBests from "../components/PersonalBests.svelte";
+    import Profile from "../components/Profile.svelte";
 
     export let data: PageServerData;
 </script>
 
-<h1>Welcome to my site!</h1>
-
+<Profile />
 <PersonalBests data={data}/>
 
 <style>
-    h1 {
-        text-align: center;
-    }
+    
 </style>
