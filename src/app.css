@@ -1,5 +1,8 @@
 body {
     background-color: #1b2028;
-    color: #ccccb5;
     font-family: Fira Code;
+    color: #9e9f90;
+}
+h1, h2, h3, .test {
+    color: #ccccb5;
 }
