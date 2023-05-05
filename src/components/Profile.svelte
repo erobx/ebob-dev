@@ -13,19 +13,25 @@
 <style>
     .profile-container {
         display: flex;
-        align-content: baseline;
+        align-content: center;
         justify-content: center;
         text-align: center;
-        margin-top: 1em;
+        margin-top: 1.5em;
     }
     .profile {
         justify-content: center;
-        align-items: center;
+        padding: 1rem;
+        background: #151a21;
+        border-radius: 0.5rem;
+        width: 30%;
+        word-wrap: break-word;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     img {
         width: 275px;
-        height: 250px;
+        max-width: 70%;
+        height: auto;
         border-radius: 50%;
-        object-fit: cover;
     }
 </style>
