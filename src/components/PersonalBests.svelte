@@ -6,7 +6,7 @@
 </script>
 
 <div class="card-container">
-    <div class="card">
+    <div class="card bg-dark-blue p-4">
         <h3 class="header">Monkeytype Personal Bests</h3>
         <div class="pbsTime">
             <div class="group">
@@ -43,8 +43,7 @@
         margin-top: 2em;
         background: #151a21;
         border-radius: 0.5rem;
-        width: 30%;
-        padding: 1em;
+        
     }
     .header {
         text-align: center;

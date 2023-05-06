@@ -10,7 +10,11 @@ const config = {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'dark-blue': '#151A21',
+      },
+    },
   },
 
   plugins: [

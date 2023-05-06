@@ -1,37 +1,16 @@
 <script lang="ts">
-
+    import Icon from "@iconify/svelte";
 </script>
 
-<div class="profile-container">
-    <div class="profile">
-        <img src="aquarium.jpg" alt="Me visiting the Atlanta Aquarium.">
-        <h1>Evan Robinson</h1>
-        <h2>Software & Cybersecurity Engineer</h2>
+
+<div class="flex justify-center text-center content-center">
+    <div class="card p-4 bg-dark-blue mt-4 rounded-lg w-max space-y-2">
+        <img class="rounded-full object-cover h-48 w-84 mx-auto h-auto" src="images/aquarium.jpg" alt="Me at the Atlanta Aquarium.">
+        <h2 class="card-header wrap-break select-text">Evan Robinson</h2>
+        <h3 class="">Software & Cybersecurity Engineer</h3>
+        <div class="flex justify-center gap-1">
+            <a href="https://github.com/erobx"><Icon icon="mdi:github" width={36} class="mx-auto" color="#23a9d5" /></a>
+            <a href="https://www.linkedin.com/in/erob-inson/"><Icon icon="mdi:linkedin" class="mx-auto" width={36} color="#23a9d5" /></a>
+        </div>
     </div>
 </div>
-
-<style>
-    .profile-container {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        text-align: center;
-        margin-top: 1.5em;
-    }
-    .profile {
-        justify-content: center;
-        padding: 1rem;
-        background: #151a21;
-        border-radius: 0.5rem;
-        width: 30%;
-        word-wrap: break-word;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    img {
-        width: 275px;
-        max-width: 70%;
-        height: auto;
-        border-radius: 50%;
-    }
-</style>
