@@ -3,8 +3,8 @@
 </script>
 
 
-<div class="flex justify-center text-center content-center">
-    <div class="card p-4 bg-dark-blue mt-4 rounded-lg w-max space-y-2">
+<div class="flex justify-center text-center content-center px-8">
+    <div class="card p-8 bg-dark-blue mt-4 rounded-lg w-full space-y-2 shadow-lg">
         <img class="rounded-full object-cover h-52 mx-auto aspect-square" src="images/aquarium.jpg" alt="Me at the Atlanta Aquarium.">
         <h2 class="card-header wrap-break select-text">Evan Robinson</h2>
         <h3 class="text-[#9E9F90]">Software & Cybersecurity Engineer</h3>

@@ -6,8 +6,8 @@
 </script>
 
 
-<div class="md:flex justify-evenly gap-2 overflow-hidden">
-    <div class="shrink min-w-0">
+<div class="md:flex justify-evenly gap-24 overflow-hidden">
+    <div class="shrink flex-col gap-4">
         <Profile />
         <Skills />
     </div>
