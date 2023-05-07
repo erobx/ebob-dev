@@ -5,68 +5,26 @@
     const time60 = data['data']['60'];
 </script>
 
-<div class="card-container">
-    <div class="card bg-dark-blue p-4">
-        <h3 class="header">Monkeytype Personal Bests</h3>
-        <div class="pbsTime">
-            <div class="group">
-                <div class="quick">
-                    <div class="test">15 sec</div>
-                    <div class="wpm">{time15[0].wpm} wpm</div>
-                    <div class="acc">{time15[0].acc}% acc</div>
-                </div>
+<div class="flex justify-center text-center content-center mt-6">
+    <div class="card bg-dark-blue p-4 rounded-lg">
+        <a href="https://monkeytype.com" class="unstyled hover:underline"><h3 class="header text-[#9E9F90]">Monkeytype Personal Bests</h3></a>
+        <div class="flex justify-evenly items-center gap-2">
+            <div>
+                <h3 class="font-bold">15 sec</h3>
+                <h5>{time15[0].wpm} wpm</h5>
+                <h5>{time15[0].acc}% acc</h5>
             </div>
-            <div class="group">
-                <div class="quick">
-                    <div class="test">30 sec</div>
-                    <div class="wpm">{time30[0].wpm} wpm</div>
-                    <div class="acc">{time30[0].acc}% acc</div>
-                </div>
+            <div>
+                <h3 class="font-bold">30 sec</h3>
+                <h5>{time30[0].wpm} wpm</h5>
+                <h5>{time30[0].acc}% acc</h5>
+
             </div>
-            <div class="group">
-                <div class="quick">
-                    <div class="test">60 sec</div>
-                    <div class="wpm">{time60[0].wpm} wpm</div>
-                    <div class="acc">{time60[0].acc}% acc</div>
-                </div>
+            <div>
+                <h3 class="font-bold">60 sec</h3>
+                <h5>{time60[0].wpm} wpm</h5>
+                <h5>{time60[0].acc}% acc</h5>
             </div>
         </div>
     </div>
 </div>
-
-<style>
-    .card-container {
-        display: flex;
-        justify-content: center;
-    }
-    .card {
-        margin-top: 2em;
-        background: #151a21;
-        border-radius: 0.5rem;
-        
-    }
-    .header {
-        text-align: center;
-        padding-bottom: .2em;
-    }
-    .pbsTime {
-        display: flex;
-        align-content: center;
-        justify-content: space-evenly;
-        
-    }
-    .group {
-        text-align: center;
-        flex-grow: .1;
-    }
-    .test {
-        font-weight: bold;
-        font-size: 1.5rem;
-    }
-    .test, .wpm {
-        margin-bottom: .2em;
-    }
-    .quick {
-        gap: 1em;
-    }
-</style>
