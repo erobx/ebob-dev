@@ -5,7 +5,7 @@
 
 <div class="flex justify-center text-center content-center">
     <div class="card p-4 bg-dark-blue mt-4 rounded-lg w-max space-y-2">
-        <img class="rounded-full object-cover h-48 w-70 mx-auto" src="images/aquarium.jpg" alt="Me at the Atlanta Aquarium.">
+        <img class="rounded-full object-cover h-52 mx-auto aspect-square" src="images/aquarium.jpg" alt="Me at the Atlanta Aquarium.">
         <h2 class="card-header wrap-break select-text">Evan Robinson</h2>
         <h3 class="">Software & Cybersecurity Engineer</h3>
         <div class="flex justify-center gap-1">

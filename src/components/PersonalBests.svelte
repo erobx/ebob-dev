@@ -66,5 +66,7 @@
     .test, .wpm {
         margin-bottom: .2em;
     }
-
+    .quick {
+        gap: 1em;
+    }
 </style>

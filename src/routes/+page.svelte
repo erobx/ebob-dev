@@ -15,7 +15,7 @@
     <svelte:fragment slot="trail"><Icon icon="material-symbols:menu" color="#23a9d5" width={36}/></svelte:fragment>
 </AppBar>
 
-<div class="flex justify-evenly gap-2">
+<div class="md:flex justify-evenly gap-2 overflow-hidden">
     <div class="shrink min-w-0">
         <Profile/>
         <PersonalBests data={data}/>
