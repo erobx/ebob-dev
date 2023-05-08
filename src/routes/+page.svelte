@@ -6,13 +6,15 @@
 </script>
 
 
-<div class="lg:flex justify-around gap-16 overflow-hidden">
-    <div class="shrink flex-col gap-4">
-        <Profile />
-        <Skills />
-    </div>
-    <div class="flex-col">
-        <Experience />
+<div class="container mx-auto p-2 sapce-y-8">
+    <div class="lg:flex xs:flex-col gap-8 justify-around">
+        <div class="flex-col gap-8">
+            <Profile />
+            <Skills />
+        </div>
+        <div class="flex-col">
+            <Experience />
+        </div>
     </div>
 </div>
 
