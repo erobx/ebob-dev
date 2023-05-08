@@ -6,12 +6,12 @@
 </script>
 
 
-<div class="md:flex justify-evenly gap-24 overflow-hidden">
+<div class="lg:flex justify-around gap-16 overflow-hidden">
     <div class="shrink flex-col gap-4">
         <Profile />
         <Skills />
     </div>
-    <div class="shrink">
+    <div class="flex-col">
         <Experience />
     </div>
 </div>

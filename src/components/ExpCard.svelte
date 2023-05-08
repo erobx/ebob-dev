@@ -8,8 +8,8 @@
     export let skills: string[];
 </script>
 
-<div class="flex justify-center mt-4">
-    <div class="card p-4 bg-dark-blue rounded-lg w-max shadow-lg space-y-1">
+<div class="flex justify-center mt-4 w-full lg:max-w-[40vw]">
+    <div class="card p-4 bg-dark-blue rounded-lg w-full shadow-lg space-y-1">
         <h3>{title}</h3>
         <h4 class="text-[#9E9F90]">{position}</h4>
         <div class="flex gap-8 justify-evenly text-[#9E9F90]">

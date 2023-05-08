@@ -3,8 +3,8 @@
 
 </script>
 
-<div class="shrink flex-col justify-center text-center px-8 mt-4 md:max-w-[40vw]">
-    <div class="card p-4 bg-dark-blue mt-4 rounded-lg shadow-lg w-full">
+<div class="shrink flex-col justify-center text-center px-2 mt-4 w-full lg:max-w-[40vw] md:flex">
+    <div class="card p-4 bg-dark-blue rounded-lg shadow-lg w-full">
         <h3>Professional Experience</h3>
     </div>
     <ExpCard 

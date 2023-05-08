@@ -5,9 +5,9 @@
     const time60 = data['data']['60'][0];
 </script>
 
-<div class="flex justify-center text-center content-center px-8">
-    <div class="card bg-dark-blue p-8 mt-4 rounded-lg w-1/2 shadow-lg">
-        <div class="md:flex justify-evenly items-center gap-2 overflow-hidden">
+<div class="lg:flex justify-center text-center content-center px-2 lg:max-w-[60vw]">
+    <div class="card bg-dark-blue p-8 mt-4 rounded-lg w-full shadow-lg">
+        <div class="lg:flex justify-evenly items-center gap-2 overflow-hidden">
             <a href="https://monkeytype.com" class="unstyled hover:underline"><h3 class="header text-[#9E9F90]">Monkeytype Personal Bests: </h3></a>
             <div>
                 <h3 class="font-bold">15 sec</h3>

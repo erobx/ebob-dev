@@ -21,7 +21,7 @@
     };
 </script>
 
-<div class="flex justify-center px-8">
+<div class="flex justify-center px-2">
     <div class="card p-4 bg-dark-blue mt-4 rounded-lg w-full text-center shadow-lg">
         <Table source={tableSimple} regionHeadCell="text-center text-[#ccccb5] text-xl" regionHead="text-[#23a9d5]" regionCell="text-[#9E9F90]"/>
     </div>

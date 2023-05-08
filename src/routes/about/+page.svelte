@@ -6,8 +6,8 @@
     export let data: PageServerData;
 </script>
 
-<div class="md:flex justify-evenly overflow-hidden">
-    <div class="shrink flex-col">
+<div class="lg:flex justify-around overflow-hidden">
+    <div class="flex-col">
         <About />
         <PersonalBests data={data} />
     </div>
