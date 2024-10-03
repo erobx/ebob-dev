@@ -10,20 +10,20 @@
         {
             position: 1,
             skills: "Frontend",
-            tools: "Svelte, React, Angular, Agile",
+            tools: "Svelte, React, NextJS",
         },
         { position: 2, skills: "Backend", tools: "Node, Flask, FastAPI, SQL" },
         {
             position: 3,
-            skills: "Data Science",
-            tools: "Python, Numpy, Pandas, Scikit",
-        },
-        {
-            position: 4,
             skills: "Languages",
             tools: "C++, Java, Golang, TypeScript",
         },
-        { position: 5, skills: "CI/CD", tools: "Git" },
+        { position: 4, skills: "CI/CD", tools: "Git, Docker" },
+        {
+            position: 5,
+            skills: "Data Science",
+            tools: "Python, Numpy, Pandas, Scikit",
+        },
     ];
 
     const tableSimple: TableSource = {
