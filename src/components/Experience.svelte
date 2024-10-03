@@ -9,15 +9,15 @@
         <h3>Professional Experience</h3>
     </div>
     <ExpCard
-        title={"University of Florida"}
-        position={"Computer Science Major & Math Minor"}
+        title={"Solution Cables Inc."}
+        position={"Independent Contractor"}
         location={"Gainesville, FL"}
-        startDate={"June 2021"}
-        endDate={"December 2024"}
+        startDate={"September 2024"}
+        endDate={"Present"}
         info={`
-            Completed courses: Data Structures and Algorithm, Networking, Operating Systems.
+            Contributed to the development and maintenance of existing company software, including programming, writing, and debugging code.
         `}
-        skills={["Software Engineering, Problem Solving, Data Structures"]}
+        skills={["Typescript, NextJS, Microservices"]}
     />
     <ExpCard
         title={"Fortinet Inc."}
@@ -32,5 +32,15 @@
         `}
         skills={["Network Topology, Sales"]}
     />
+    <ExpCard
+        title={"University of Florida"}
+        position={"Computer Science Major & Math Minor"}
+        location={"Gainesville, FL"}
+        startDate={"June 2021"}
+        endDate={"December 2024"}
+        info={`
+            Completed courses: Data Structures and Algorithm, Networking, Operating Systems, Programming Language Concepts.
+        `}
+        skills={["Software Engineering, Problem Solving, Data Structures"]}
+    />
 </div>
-
