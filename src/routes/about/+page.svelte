@@ -10,6 +10,8 @@
 <div class="lg:flex justify-around overflow-hidden">
     <div class="flex-col">
         <About />
+    </div>
+    <div class="flex-col">
         <TypingTitle />
         <PersonalBests {data} />
     </div>

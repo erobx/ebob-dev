@@ -3,11 +3,9 @@
 </script>
 
 <div
-    class="shrink flex-col justify-center text-center px-2 mt-4 w-full lg:max-w-[40vw] md:flex"
+    class="shrink flex-col justify-center text-center px-2 mt-2 w-full lg:max-w-[40vw] md:flex"
 >
-    <div class="card p-4 bg-dark-blue rounded-lg shadow-lg w-full">
-        <h3>Professional Experience</h3>
-    </div>
+    <h3 class="text-2xl">Professional Experience</h3>
     <ExpCard
         title={"Solution Cables Inc."}
         position={"Independent Contractor"}
@@ -17,7 +15,7 @@
         info={`
             Contributed to the development and maintenance of existing company software, including programming, writing, and debugging code.
         `}
-        skills={["Typescript, NextJS, Microservices"]}
+        skills={["TypeScript, NextJS, PostgreSQL, Prisma"]}
     />
     <ExpCard
         title={"Fortinet Inc."}
@@ -42,5 +40,18 @@
             Completed courses: Data Structures and Algorithm, Networking, Operating Systems, Programming Language Concepts.
         `}
         skills={["Software Engineering, Problem Solving, Data Structures"]}
+    />
+    <ExpCard
+        title={"Universidad Carlos III de Madrid"}
+        position={"International Student"}
+        location={"Madrid, Spain"}
+        startDate={"Januaray 2024"}
+        endDate={"May 2024"}
+        info={`
+            Study abroad program focused on computer science core requirements.
+            Experienced Spanish culture and had the chance to meet and connect with students from various European countries.
+            Completed courses: Artificial Intelligence, Numerical Methods and Spanish B1.
+        `}
+        skills={["AI Fundamentals, MATLAB"]}
     />
 </div>
