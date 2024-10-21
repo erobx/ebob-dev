@@ -10,7 +10,7 @@
                 link={"github.com/erobx/anki_duo"}
                 info={`
                     I study Spanish on Duolingo, however Duo doesn't allow a user to retrieve their studied vocab words.
-                    Thus I created a quick wrapper that allows a user to retrieve their words and even import them into
+                    So I created a quick wrapper that allows a user to retrieve their words and import them into
                     a popular flashcard reviewer: Anki.
                 `}
                 tech={["Golang, Python, Make"]}

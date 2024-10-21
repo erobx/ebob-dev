@@ -9,20 +9,20 @@
     const sourceData = [
         {
             position: 1,
+            skills: "Languages",
+            tools: "Java, Golang, JavaScript, Python",
+        },
+        {
+            position: 2,
             skills: "Frontend",
             tools: "Svelte, React, NextJS",
         },
-        { position: 2, skills: "Backend", tools: "Node, Flask, FastAPI, SQL" },
-        {
-            position: 3,
-            skills: "Languages",
-            tools: "C++, Java, Golang, TypeScript",
-        },
+        { position: 3, skills: "Backend", tools: "Node, Flask, FastAPI, SQL" },
         { position: 4, skills: "CI/CD", tools: "Git, Docker" },
         {
             position: 5,
             skills: "Data Science",
-            tools: "Python, Numpy, Pandas, Scikit",
+            tools: "Numpy, Pandas, Scikit",
         },
     ];
 
@@ -35,7 +35,7 @@
 
 <div class="flex justify-center px-2">
     <div
-        class="card p-4 bg-dark-blue mt-4 rounded-lg w-full text-center shadow-lg"
+        class="card p-8 bg-dark-blue mt-4 rounded-lg w-full text-center shadow-lg"
     >
         <Table
             source={tableSimple}
