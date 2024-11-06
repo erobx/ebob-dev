@@ -8,14 +8,15 @@
     <h3 class="text-2xl">Professional Experience</h3>
     <ExpCard
         title={"Solution Cables Inc."}
-        position={"Independent Contractor"}
+        position={"Software Engineer Intern"}
         location={"Gainesville, FL"}
         startDate={"September 2024"}
         endDate={"Present"}
         info={`
             Contributed to the development and maintenance of existing company software, including programming, writing, and debugging code.
+            Created internal tooling to ensure timely delivery of orders.
         `}
-        skills={["TypeScript, NextJS, PostgreSQL, Prisma"]}
+        skills={["TypeScript, NextJS, PostgreSQL, Prisma, Docker"]}
     />
     <ExpCard
         title={"Fortinet Inc."}
