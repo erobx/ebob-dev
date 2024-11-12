@@ -6,6 +6,26 @@
     <div class="lg:flex xs:flex-col gap-8 justify-around">
         <div class="flex-col gap-8">
             <ProjectCard
+                title={"Golingo"}
+                link={"github.com/erobx/golingo"}
+                info={`
+                    Duolingo does not have an offical API, but there exists an unofficial API in Python.
+                    However, I wanted the API in Golang so I could easily interface with my other project (Anki Duo).
+                    Therefore, I forked the exisiting project and rewrote the API in Go for my use cases.
+                `}
+                bw={["Golang"]}
+            />
+            <ProjectCard
+                title={"Anki Duo"}
+                link={"github.com/erobx/anki_duo"}
+                info={`
+                    I study Spanish on Duolingo, however Duo doesn't allow a user to retrieve their studied vocab words.
+                    So I created a program that allows a user to retrieve their words and import them into
+                    a popular flashcard reviewer called Anki.
+                `}
+                bw={["Golang, Make"]}
+            />
+            <ProjectCard
                 title={"SwampReview"}
                 link={"github.com/Code-Goblins2024/swamp-review"}
                 info={`
@@ -16,16 +36,6 @@
                 bw={["React, JavaScript, Supabase"]}
             />
             <ProjectCard
-                title={"Anki Duo"}
-                link={"github.com/erobx/anki_duo"}
-                info={`
-                    I study Spanish on Duolingo, however Duo doesn't allow a user to retrieve their studied vocab words.
-                    So I created a quick wrapper that allows a user to retrieve their words and import them into
-                    a popular flashcard reviewer: Anki.
-                `}
-                bw={["Golang, Python, Make"]}
-            />
-            <ProjectCard
                 title={"Programming Language"}
                 link={"github.com/erobx/PLC_Project"}
                 info={`
@@ -33,9 +43,7 @@
                     Java bytecode. After creating my own lexer, parser, interpreter, analyzer and generator,
                     I was able to write FizzBuzz in the language. That blew my mind.
                 `}
-                bw={[
-                    "Java, Unit Testing, End-to-end Testing, Harness Testing",
-                ]}
+                bw={["Java, Unit Testing, End-to-end Testing, Harness Testing"]}
             />
             <ProjectCard
                 title={"Ebob.dev"}
