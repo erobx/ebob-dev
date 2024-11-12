@@ -11,7 +11,7 @@
                 info={`
                     Duolingo does not have an offical API, but there exists an unofficial API in Python.
                     However, I wanted the API in Golang so I could easily interface with my other project (Anki Duo).
-                    Therefore, I forked the exisiting project and rewrote the API in Go for my use cases.
+                    Therefore, I forked the existing project and rewrote the API in Go for my use cases.
                 `}
                 bw={["Golang"]}
             />
