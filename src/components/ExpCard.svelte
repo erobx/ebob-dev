@@ -1,11 +1,23 @@
 <script lang="ts">
-    export let title: string;
-    export let position: string;
-    export let location: string;
-    export let startDate: string;
-    export let endDate: string;
-    export let info: string;
-    export let skills: string[];
+    interface Props {
+        title: string;
+        position: string;
+        location: string;
+        startDate: string;
+        endDate: string;
+        info: string;
+        skills: string[];
+    }
+
+    let {
+        title,
+        position,
+        location,
+        startDate,
+        endDate,
+        info,
+        skills
+    }: Props = $props();
 </script>
 
 <div class="flex justify-center mt-4 w-full lg:max-w-[40vw]">

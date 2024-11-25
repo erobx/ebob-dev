@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let data;
+    let { data } = $props();
     const time15 = data["data"]["15"][0];
     const time30 = data["data"]["30"][0];
     const time60 = data["data"]["60"][0];

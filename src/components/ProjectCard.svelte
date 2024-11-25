@@ -1,8 +1,17 @@
 <script lang="ts">
-    export let title: string;
-    export let link: string;
-    export let info: string;
-    export let bw: string[];
+    interface Props {
+        title: string;
+        link: string;
+        info: string;
+        bw: string[];
+    }
+
+    let {
+        title,
+        link,
+        info,
+        bw
+    }: Props = $props();
     let refLink = "https://" + link;
 </script>
 

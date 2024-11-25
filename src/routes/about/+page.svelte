@@ -4,7 +4,11 @@
     import TypingTitle from "../../components/TypingTitle.svelte";
     import type { PageServerData } from "./$types";
 
-    export let data: PageServerData;
+    interface Props {
+        data: PageServerData;
+    }
+
+    let { data }: Props = $props();
 </script>
 
 <div class="lg:flex justify-around overflow-hidden">
