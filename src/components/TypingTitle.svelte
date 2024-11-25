@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <div
     class="lg:flex justify-center text-center content-center px-2 lg:max-w-[60vw]"
 >

@@ -24,16 +24,12 @@
 
 <AppBar background="bg-dark-blue">
     {#snippet lead()}
-    
         <a class="flex flex-row gap-3 items-center hover:scale-105 transition-all" href="/">
             <img class="w-9 h-9" src="images/ebob-logo.png">
             <h2 class="text-[#23a9d5] text-lg">Evan Robinson</h2>
         </a>
-
     {/snippet}
-
-{#snippet trail()}
-    
+    {#snippet trail()}
         <!-- Mobile dropdown menu -->
         <div class="md:hidden relative">
             <button
@@ -59,5 +55,5 @@
             <a href="/about" class="btn btn-md hover:scale-105 text-[#9E9F90]">About</a>
             <a href="/projects" class="btn btn-md hover:scale-105 text-[#9E9F90]">Projects</a>
         </nav>
-
-    {/snippet}</AppBar>
+    {/snippet}
+</AppBar>
