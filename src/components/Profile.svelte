@@ -8,8 +8,8 @@
     >
         <img
             class="rounded-full object-cover w-3/4 mx-auto aspect-square"
-            src="images/retiro.jpg"
-            alt="Creator sitting down looking to his left."
+            src="images/profile-pic.jpg"
+            alt="Creator smiling, looking at camera."
         />
         <h2 class="card-header wrap-break select-text text-3xl">Evan Robinson</h2>
         <h3 class="text-[#9E9F90] text-xl">Software Engineer</h3>

@@ -10,14 +10,14 @@
         {
             position: 1,
             skills: "Languages",
-            tools: "Java, Golang, JavaScript, Python",
+            tools: "Golang, JavaScript, TypeScript, Python",
         },
         {
             position: 2,
             skills: "Frontend",
-            tools: "Svelte, React, NextJS",
+            tools: "React, NextJS, SvelteKit",
         },
-        { position: 3, skills: "Backend", tools: "Node, Flask, FastAPI, SQL" },
+        { position: 3, skills: "Backend", tools: "Fiber, Node, Flask, FastAPI, SQL" },
         { position: 4, skills: "CI/CD", tools: "Git, Docker" },
         {
             position: 5,
