@@ -1,8 +1,6 @@
 import { join } from "path";
 import type { Config } from "tailwindcss";
 
-import { skeleton } from "@skeletonlabs/tw-plugin";
-
 const config = {
     darkMode: 'class',
     content: [
@@ -21,7 +19,6 @@ const config = {
     },
     plugins: [
         require("@tailwindcss/typography"),
-        skeleton
     ]
 } satisfies Config;
 
