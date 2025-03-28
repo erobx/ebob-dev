@@ -10,7 +10,7 @@
             <Profile />
             <Skills />
         </div>
-        <div class="flex-col mt-4 lg:mt-8">
+        <div class="flex-col w-full lg:w-1/2 mt-4 lg:mt-8">
             <Experience />
         </div>
     </div>

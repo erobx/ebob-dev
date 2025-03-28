@@ -35,7 +35,7 @@
 
 <div class="flex justify-center px-2">
     <div
-        class="card p-8 bg-dark-blue mt-4 rounded-lg w-full text-center shadow-lg"
+        class="card p-4 bg-dark-blue mt-4 rounded-lg w-full text-center shadow-lg"
     >
         <Table
             source={tableSimple}

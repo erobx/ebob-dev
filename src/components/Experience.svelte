@@ -33,12 +33,13 @@
     />
     <ExpCard
         title={"University of Florida"}
-        position={"Computer Science Major & Math Minor"}
+        position={"Computer Science Major"}
         location={"Gainesville, FL"}
         startDate={"June 2021"}
         endDate={"December 2024"}
         info={`
-            Completed courses: Data Structures and Algorithm, Networking, Operating Systems, Programming Language Concepts.
+            Graduated from the University of Florida in 3.5 years with my Bachelor's of Science in Computer
+            Science.
         `}
         skills={["Software Engineering, Problem Solving, Data Structures"]}
     />
