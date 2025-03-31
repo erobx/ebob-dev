@@ -30,7 +30,7 @@
                     color="#23a9d5"
                 /></a
             >
-            <a href="https://www.ebob.dev/static/resume.pdf" target="_blank"
+            <a href="https://www.ebob.dev/resume.pdf" target="_blank"
                 ><Icon
                     icon="mdi:file-account"
                     class="mx-auto"
