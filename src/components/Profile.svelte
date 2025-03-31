@@ -14,7 +14,7 @@
         <h2 class="card-header wrap-break select-text text-xl">Evan Robinson</h2>
         <h3 class="text-[#9E9F90] text-lg">Software Engineer</h3>
         <div class="flex justify-center gap-1">
-            <a href="https://github.com/erobx" target="_blank"
+            <a href="https://www.github.com/erobx" target="_blank"
                 ><Icon
                     icon="mdi:github"
                     width={40}
@@ -30,7 +30,7 @@
                     color="#23a9d5"
                 /></a
             >
-            <a href="https://www.ebob.dev/resume.pdf" target="_blank"
+            <a href="https://www.ebob.dev/static/resume.pdf" target="_blank"
                 ><Icon
                     icon="mdi:file-account"
                     class="mx-auto"
