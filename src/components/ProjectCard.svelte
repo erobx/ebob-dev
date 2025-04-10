@@ -20,7 +20,7 @@
         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
             <h3 class="text-lg font-semibold">{title}</h3>
             <h2 class="mt-2 sm:mt-0">
-                <a class="hover:underline text-[#9E9F90]" href={refLink}>
+                <a class="hover:underline text-[#9E9F90]" href={refLink} target="_blank">
                     {link}
                 </a>
             </h2>

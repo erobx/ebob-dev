@@ -24,7 +24,7 @@
             For all inquiries, please email me at <b>erob7856@gmail.com</b>.
             I have experience working on an established NextJS + NodeJS code base, as well as
             interfacing with PostgresSQL. Right now, I am building a
-            <a class="hover:underline" href="https://github.com/erobx/tradeups">fullstack application</a>
+            <a class="hover:underline" href="https://github.com/erobx/csupgrade" target="_blank">fullstack application</a>
             using ReactJS + Golang + PostgresSQL focusing on group tradeups from the
             popular game CS2.
         </p>

@@ -6,8 +6,8 @@
     <div class="lg:flex xs:flex-col gap-8 justify-around">
         <div class="flex-col gap-8">
             <ProjectCard
-                title={"Tradeups"}
-                link={"github.com/erobx/tradeups"}
+                title={"CSUpgrade"}
+                link={"github.com/erobx/csupgrade"}
                 info={`
                     The game Counter-Strike 2 has a system called tradeups where you can trade 10 skins of the same
                     rarity to get 1 of the next best rarity. I had the idea to allow users to pool their

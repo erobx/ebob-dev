@@ -11,5 +11,8 @@ export const load: PageServerLoad = (async ({ fetch }) => {
         headers: headers,
     });
     const data = await response.json();
+
+    if (!data) return "apekey invalid"
+
     return data;
 });
