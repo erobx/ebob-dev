@@ -1,4 +1,6 @@
 <script lang="ts">
+    import "../components/Table.svelte"
+    import Table from "../components/Table.svelte";
     let url = "https://jonboh.dev/posts/rr/back_and_forth.gif"
 </script>
 
@@ -15,7 +17,7 @@
                         <p class="mb-5">
                             A team player who loves turning ideas into meaningful solutions.
                             I bring curiosity, creativity, and a collaborative spirit to every project.
-                            (And yes, I use Vim—but I promise not to make you learn it.)
+                            (And yes, I use NeoVim.)
                         </p>
                         <div class="flex justify-evenly">
                             <button class="btn btn-success btn-soft">Learn More</button>
@@ -26,21 +28,30 @@
             </div>
         </div>
     </div>
-    <div class="hero min-h-screen">
-        <div class="hero-content">
-            <div class="max-w-md">
-                <div class="card">
-                    <div class="card-body">
-                        <!-- svelte-ignore a11y_img_redundant_alt -->
-                        <img
-                            class="rounded-full object-cover aspect-square"
-                            src="images/profile-pic.jpg"
-                            alt="Evan smiling for graduation photo."
-                        />
-                    </div>
-                </div>
-                
-            </div>
+    <div class="flex flex-col items-center gap-4 mt-8">
+        <div class="max-w-md">
+            <!-- svelte-ignore a11y_img_redundant_alt -->
+            <img
+                class="rounded-full object-cover m-auto aspect-square border-1"
+                src="images/profile-pic.jpg"
+                alt="Evan smiling for graduation photo."
+            />
+        </div>
+        <div class="max-w-lg">
+            <h1 class="text-2xl font-bold">About Me</h1>
+            <p class="text-lg">
+            I'm a newly graduated computer science student from the University of Florida,
+            fueld by a passion for crafting impactful solutions. With experience in modern
+            technologies like NodeJS, React, Golang, and PostgreSQL, I've built applications
+            that streamline workflows and enhance collaboration.<br><br>
+            I'm eager to continue learning and contribute to innovate projects, 
+            particularly those that bring people together and solve real-world problems.
+            When I'm not coding, you can find me watching any sport, hitting the gym, or typing.
+        </div>
+        <!--Vim like skill navigation here-->
+        <!--For now just my table-->
+        <div>
+            <Table />
         </div>
     </div>
 </div>
