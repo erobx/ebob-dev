@@ -1,63 +1,17 @@
-<script>
-    import { AppBar } from "@skeletonlabs/skeleton";
-    import { onMount } from "svelte";
+<script lang="ts">
 
-    let dropdownOpen = false;
-
-    function toggleDropdown() {
-        const dropdown = document.getElementById("dropdown");
-        dropdownOpen = !dropdownOpen;
-        if (dropdown)
-            dropdown.classList.toggle("hidden", !dropdownOpen);
-    }
-
-    function closeDropdown() {
-        dropdownOpen = false;
-        const dropdown = document.getElementById("dropdown");
-        if (dropdown)
-            dropdown.classList.add("hidden");
-    }
-
-    onMount(() => {
-        const button = document.querySelector("button[aria-controls='dropdown']");
-        if (button)
-            button.addEventListener("click", toggleDropdown);
-    });
 </script>
 
-<AppBar background="bg-dark-blue">
-    {#snippet lead()}
-        <a class="flex flex-row gap-3 items-center hover:scale-105 transition-all" href="/">
-            <img class="w-9 h-9" src="images/ebob-logo.png" alt="Light blue E on dark blue background.">
-            <h2 class="text-[#23a9d5] text-lg">Evan Robinson</h2>
-        </a>
-    {/snippet}
-    {#snippet trail()}
-        <!-- Mobile dropdown menu -->
-        <div class="md:hidden relative">
-            <button
-                class="btn btn-md flex items-center hover:scale-105 text-[#9E9F90]"
-                aria-expanded="false"
-                aria-controls="dropdown"
-                aria-label="Menu"
-            >
-                <svg class="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
-                </svg>
-            </button>
-
-            <!-- Dropdown items -->
-            <div id="dropdown" class="absolute right-0 mt-2 w-48 bg-dark-blue text-white rounded-lg shadow-lg hidden">
-                <a href="/" class="block px-4 py-2 text-sm text-[#9E9F90]" onclick={closeDropdown}>Home</a>
-                <a href="/about" class="block px-4 py-2 text-sm text-[#9E9F90]" onclick={closeDropdown}>About</a>
-                <a href="/projects" class="block px-4 py-2 text-sm text-[#9E9F90]" onclick={closeDropdown}>Projects</a>
-            </div>
+<div class="navbar bg-base-300 shadow-sm">
+    <div class="navbar-start">
+        <a class="btn btn-ghost text-xl" href="/">Evan Robinson</a>
+    </div>
+    <div class="navbar-end mr-2">
+        <div class="flex gap-12 justify-evenly">
+            <a class="btn btn-square btn-ghost" href="">About</a>
+            <a class="btn btn-square btn-ghost" href="">Experience</a>
+            <a class="btn btn-square btn-ghost" href="">Projects</a>
+            <a class="btn btn-square btn-ghost" href="">Contact</a>
         </div>
-
-        <!-- Standard nav for larger screens -->
-        <nav class="hidden md:flex flex-row gap-4">
-            <a href="/about" class="btn btn-md hover:scale-105 text-[#9E9F90]">About</a>
-            <a href="/projects" class="btn btn-md hover:scale-105 text-[#9E9F90]">Projects</a>
-        </nav>
-    {/snippet}
-</AppBar>
+    </div>
+</div>
