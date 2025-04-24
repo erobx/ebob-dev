@@ -48,6 +48,9 @@
             particularly those that bring people together and solve real-world problems.
             When I'm not coding, you can find me watching any sport, hitting the gym, or typing.
         </div>
+        <div class="mockup-code w-fit">
+            <pre data-prefix="~"><code>nvim .</code></pre>
+        </div>
         <!--Vim like skill navigation here-->
         <!--For now just my table-->
         <div>

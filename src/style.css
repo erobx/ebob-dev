@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-    themes: winter --default, dim --prefersdark;
+    themes: light --default, dim --prefersdark;
     root: ":root";
     exclude: rootscrollgutter;
     logs: true;
