@@ -1,63 +1,97 @@
-export interface MilestoneData {
-    title: string;
-    date: string;
-    description: string;
-    skills: string[];
-    technicalDetails: string[];
-}
-
 export interface Skill {
     name: string;
-    description: string;
+    badges: Badge[];
 }
 
-export function createMilestones(): MilestoneData[] {
-    return [
-        {
-            title: "Bachelor's of Computer Science",
-            date: "2021-2024",
-            description: "Completed a Bachelor's degree in Computer Science from the University of Florida",
-            skills: ["Golang, C++, Java, Python, Data Structrues, Algorithms"],
-            technicalDetails: [
-                "Graduated with honors",
-                "Led a team project...",
+export interface Badge {
+    name: string;
+    color: string;
+}
 
-            ],
-        },
-        {
-            title: "Systems Engineering Intern",
-            date: "2022",
-            description: "",
-            skills: [],
-            technicalDetails: [],
-        },
-        {
-            title: "Software Engineer Intern",
-            date: "2024",
-            description: "",
-            skills: ["TypeScript, Docker, PostgreSQL"],
-            technicalDetails: [],
-        }
-    ]
+export interface Project {
+    name: string;
+    description: string;
+    img?: string;
+    link?: string;
+    repo: string;
+    badges: Badge[];
 }
 
 export function createSkills(): Skill[] {
     return [
         {
             name: "Programming Languages",
-            description: "Golang, TypeScript, Python, Java, C++, HTML/CSS"
+            badges: [
+                {name: "Golang", color: "info"}, 
+                {name: "TypeScript", color: "info"},
+                {name: "Python", color: "info"}, 
+                {name: "Java", color: "info"},
+                {name: "C++", color: "info"},
+                {name: "HTML/CSS", color: "info"}
+            ]
         },
         {
             name: "Databases",
-            description: "PostgreSQL, MySQL, MonogDB"
+            badges: [
+                {name: "PostgreSQL", color: "accent"},
+                {name: "MySQL", color: "accent"},
+                {name: "MonogDB", color: "accent"}
+            ]
         },
         {
-            name: "Tools",
-            description: "Git, Docker, VS Code, Jupyter Notebook"
+            name: "Development",
+            badges: [
+                {name: "Git", color: "info"},
+                {name: "Docker", color: "info"},
+                {name: "VS Code", color: "info"},
+                {name: "Linux", color: "info"},
+                {name: "Windows", color: "info"},
+                {name: "Jupyter Notebook", color: "info"}
+            ]
         },
         {
             name: "Libraries",
-            description: "TailwindCSS, Numpy, Scikit, Pandas",
+            badges: [
+                {name: "TailwindCSS", color: "accent"}, 
+                {name: "tRPC", color: "accent"},
+                {name: "Numpy", color: "accent"}, 
+                {name: "Scikit", color: "accent"},
+                {name: "Pandas", color: "accent"}
+            ]
         }
+    ]
+}
+
+export function createProjects(): Project[] {
+    return [
+        {
+            name: "CSUpgrade",
+            description: `
+            A web application centered around group-based skin upgrading within the 
+            Counter-Strike 2 economic system.
+            `,
+            img: "",
+            link: "",
+            repo: "https://github.com/erobx/csupgrade",
+            badges: [
+                {name: "Golang", color: "info"},
+                {name: "React", color: "info"},
+                {name: "PostgreSQL", color: "info"}
+            ]
+        },
+        {
+            name: "SwampReview",
+            description: "Website for student reviews about on-campus living options for the University of Florida.",
+            img: "images/swamp-review.png",
+            link: "https://swampreview.netlify.app/",
+            repo: "https://github.com/Code-Goblins2024/swamp-review",
+            badges: [
+                {name: "JavaScript", color: "secondary"},
+                {name: "React", color: "info"},
+                {name: "Agile", color: "accent"},
+                {name: "PostgreSQL", color: "info"},
+                {name: "Backend", color: "info"}
+            ]
+        },
     ]
 }
