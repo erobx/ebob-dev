@@ -1,7 +1,44 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-    themes: light --default, dim --prefersdark;
+    themes: ebob --default, emerald --light;
     root: ":root";
     exclude: rootscrollgutter;
     logs: true;
 }
+
+
+@plugin "daisyui/theme" {
+    name: "ebob";
+    default: true;
+    prefersdark: true;
+    color-scheme: "dark";
+    --color-base-100: oklch(24% 0.017 259.76);
+    --color-base-200: oklch(28% 0.017 259.76);
+    --color-base-300: oklch(34% 0.017 259.76);
+    --color-base-content: #ccccb5;
+    --color-primary: #23a9d5;
+    --color-primary-content: oklch(97% 0.014 343.198);
+    --color-secondary: #4b5975;
+    --color-secondary-content: #ccccb5;
+    --color-accent: #EB8258;
+    --color-accent-content: oklch(100% 0 0);
+    --color-neutral: oklch(12% 0.042 264.695);
+    --color-neutral-content: #ccccb5;
+    --color-info: #B9C6AE;
+    --color-info-content: oklch(97% 0.013 236.62);
+    --color-success: #C2D076;
+    --color-success-content: oklch(98% 0.031 120.757);
+    --color-warning: #F4743B;
+    --color-warning-content: oklch(98% 0.022 95.277);
+    --color-error: #b81b2c;
+    --color-error-content: oklch(97% 0.013 17.38);
+    --radius-selector: 0.5rem;
+    --radius-field: 2rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 1;
+    --noise: 0;
+  }
+  

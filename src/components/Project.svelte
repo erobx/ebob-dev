@@ -3,7 +3,7 @@
     let { project, elementSelected }: { project: Project, elementSelected: string } = $props()
 </script>
 
-<div class="flex flex-col gap-2">
+<div class="flex flex-col text-center gap-2">
     {#if project.img}
         <img
             src={project.img}
@@ -14,9 +14,9 @@
 
     <div class="flex justify-center gap-4">
         {#if project.link && elementSelected === "link"}
-            <button id="link" class="btn btn-active btn-info"><a href={project.link} target="_blank">Live Link</a></button>
+            <button id="link" class="btn btn-active btn-accent"><a href={project.link} target="_blank">Live Link</a></button>
         {:else if project.link}
-            <button id="link" class="btn btn-outline btn-info"><a href={project.link} target="_blank">Live Link</a></button>
+            <button id="link" class="btn btn-outline btn-accent"><a href={project.link} target="_blank">Live Link</a></button>
         {/if}
 
         {#if project.repo && elementSelected === "repo"}

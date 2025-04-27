@@ -1,6 +1,5 @@
 <script lang="ts">
     import Icon from "@iconify/svelte";
-    import "../components/Table.svelte"
     import VimPanel from "../components/VimPanel.svelte";
     import Experience from "../components/Experience.svelte";
     import Education from "../components/Education.svelte";
@@ -25,19 +24,23 @@
     <!--Hero should contain vim motions in background--> 
     <div class="hero min-h-screen" style={`background-image: url(${url});`}>
         <div class="hero-overlay"></div>
-        <div class="hero-content text-neutral-content text-center">
+        <div class="hero-content">
             <div class="max-w-md">
-                <div class="card card-border card-xl bg-neutral mb-20">
+                <div class="card card-border card-xl bg-base-300 mb-20">
                     <div class="card-body">
                         <h1 class="mb-5 text-5xl font-bold">Evan Robinson</h1>
                         <p class="mb-5">
                             A team player who loves turning ideas into meaningful solutions.
                             I bring curiosity, creativity, and a collaborative spirit to every project.
-                            (And yes, I use NeoVim.)
+                            (And yes, I use Vim.)
                         </p>
                         <div class="flex justify-evenly">
                             <button class="btn btn-success btn-soft"><a href="#about" onclick={handleAnchorClick}>Learn More</a></button>
-                            <button class="btn btn-info btn-soft">Résumé</button>
+                            <a href="https://www.ebob.dev/resume.pdf" target="_blank">
+                                <button class="btn btn-info btn-soft">
+                                    Résumé <Icon icon="mdi:file-outline" width={20} />
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -64,7 +67,7 @@
             particularly those that bring people together and solve real-world problems.
             When I'm not coding, you can find me watching any sport, hitting the gym, or typing.
         </div>
-        <h1 class="text-2xl mt-2 font-bold tracking-wider">My Motions</h1>
+        <h1 id="projects" class="text-2xl mt-2 font-bold tracking-wider">My Projects</h1>
         <p class="text-md">Click to focus.</p>
         <VimPanel data={data} />
     </div>
@@ -82,7 +85,7 @@
         <h1 class="text-2xl font-bold">Contact</h1>
         <p class="text-lg">
             If you have any questions or want to collaborate, please reach out!<br>
-            <span>Email: <span class="text-info">erob7856@gmail.com</span></span>
+            <span>Email: <span class="text-primary font-bold">erob7856@gmail.com</span></span>
         </p>
         <div class="flex justify-evenly">
             <a href="https://www.github.com/erobx" target="_blank">

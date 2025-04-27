@@ -24,7 +24,7 @@
         onclick={toggleCard}
         onkeydown={(e) => e.key === 'Enter' && toggleCard()}
     >
-        <h3 class="text-2xl text-primary flex-grow font-semibold text-center">{position}</h3>
+        <h3 class="text-primary text-2xl flex-grow font-semibold text-center">{position}</h3>
         <svg
             class="w-6 h-6 transform transition-transform"
             class:rotate-180={isExpanded}
@@ -41,12 +41,12 @@
             />
         </svg>
     </div>
-    <h1 class="text-xl text-info font-semibold text-center">{title} | {startDate} - {endDate}</h1>
+    <h1 class="text-success text-xl font-semibold text-center">{title} | {startDate} - {endDate}</h1>
     {#if isExpanded}
         <div transition:fade={{ delay: 0, duration: 1 }}>
             <ul>
                 {#each info as i}
-                    <li>
+                    <li class="text-lg">
                         <span class="font-semibold text-accent">*</span> {i}
                     </li>
                 {/each}

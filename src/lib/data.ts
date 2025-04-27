@@ -6,6 +6,7 @@ export interface Skill {
 export interface Badge {
     name: string;
     color: string;
+    iconName?: string;
 }
 
 export interface Project {
@@ -13,7 +14,7 @@ export interface Project {
     description: string;
     img?: string;
     link?: string;
-    repo: string;
+    repo?: string;
     badges: Badge[];
 }
 
@@ -22,41 +23,47 @@ export function createSkills(): Skill[] {
         {
             name: "Programming Languages",
             badges: [
-                {name: "Golang", color: "info"}, 
-                {name: "TypeScript", color: "info"},
-                {name: "Python", color: "info"}, 
-                {name: "Java", color: "info"},
-                {name: "C++", color: "info"},
-                {name: "HTML/CSS", color: "info"}
+                {name: "Golang", color: "primary", iconName: "logos:gopher"}, 
+                {name: "TypeScript", color: "primary", iconName: ""},
+                {name: "Python", color: "primary", iconName: ""}, 
+                {name: "Java", color: "primary", iconName: ""},
+                {name: "C++", color: "primary", iconName: ""},
+                {name: "HTML/CSS", color: "primary", iconName: ""}
             ]
         },
         {
             name: "Databases",
             badges: [
-                {name: "PostgreSQL", color: "accent"},
-                {name: "MySQL", color: "accent"},
-                {name: "MonogDB", color: "accent"}
+                {name: "PostgreSQL", color: "info", iconName: ""},
+                {name: "MySQL", color: "info", iconName: ""},
+                {name: "MonogDB", color: "info", iconName: ""}
             ]
         },
         {
             name: "Development",
             badges: [
-                {name: "Git", color: "info"},
-                {name: "Docker", color: "info"},
-                {name: "VS Code", color: "info"},
-                {name: "Linux", color: "info"},
-                {name: "Windows", color: "info"},
-                {name: "Jupyter Notebook", color: "info"}
+                {name: "Git", color: "primary", iconName: ""},
+                {name: "Docker", color: "primary", iconName: ""},
+                {name: "Linux", color: "primary", iconName: ""},
+                {name: "Windows", color: "primary", iconName: ""},
+                {name: "Vite", color: "primary"}
+            ]
+        },
+        {
+            name: "Frameworks",
+            badges: [
+                {name: "React", color: "info"},
+                {name: "Svelte", color: "info"},
             ]
         },
         {
             name: "Libraries",
             badges: [
-                {name: "TailwindCSS", color: "accent"}, 
-                {name: "tRPC", color: "accent"},
-                {name: "Numpy", color: "accent"}, 
-                {name: "Scikit", color: "accent"},
-                {name: "Pandas", color: "accent"}
+                {name: "TailwindCSS", color: "primary", iconName: ""},
+                {name: "tRPC", color: "primary", iconName: ""},
+                {name: "Numpy", color: "primary", iconName: ""}, 
+                {name: "Scikit", color: "primary", iconName: ""},
+                {name: "Pandas", color: "primary", iconName: ""}
             ]
         }
     ]
@@ -74,9 +81,9 @@ export function createProjects(): Project[] {
             link: "",
             repo: "https://github.com/erobx/csupgrade",
             badges: [
-                {name: "Golang", color: "info"},
-                {name: "React", color: "info"},
-                {name: "PostgreSQL", color: "info"}
+                {name: "Golang", color: "primary", iconName: ""},
+                {name: "React", color: "info", iconName: ""},
+                {name: "PostgreSQL", color: "primary", iconName: ""}
             ]
         },
         {
@@ -89,8 +96,68 @@ export function createProjects(): Project[] {
                 {name: "JavaScript", color: "secondary"},
                 {name: "React", color: "info"},
                 {name: "Agile", color: "accent"},
-                {name: "PostgreSQL", color: "info"},
+                {name: "PostgreSQL", color: "primary"},
+                {name: "Teamwork", color: "info"},
                 {name: "Backend", color: "info"}
+            ]
+        },
+        {
+            name: "Portfolio",
+            description: `
+            The website you're currently on! A digital representation
+            of my skills, experience, and projects. It is built with
+            SvelteKit, TypeScript, Tailwindcss and DaisyUI.
+            `,
+            img: "",
+            link: "https://www.ebob.dev",
+            repo: "https://www.github.com/erobx/ebob-dev",
+            badges: [
+                {name: "Svelte", color: "secondary"},
+                {name: "TypeScript", color: "primary"},
+                {name: "Tailwindcss", color: "info"}
+            ]
+        },
+        {
+            name: "Anki Duo",
+            description: `
+            A cli tool that allows a user to retrieve their studied vocab
+            words from Duolingo and import them into the flashcard program Anki.
+            It utilizes an unofficial Duolingo api I rewrote in Go.
+            `,
+            img: "",
+            repo: "https://www.github.com/erobx/anki_duo",
+            badges: [
+                {name: "Golang", color: "primary"},
+                {name: "Make", color: "success"}
+            ]
+        },
+        {
+            name: "Programming Language",
+            description: `
+            Developed a lexer, parser, interpreter, analyzer and generator to
+            create my own programming language that compiles to Java bytecode.
+            `,
+            img: "",
+            repo: "https://www.github.com/erobx/PLC_Project",
+            badges: [
+                {name: "Java", color: "error"},
+                {name: "Teamwork", color: "accent"},
+            ]
+        },
+        {
+            name: "Stonks",
+            description: `
+            My final project for Data Structures and Algorithms.
+            Analyzed 1000+ stocks from various exchanges in a graph with
+            edges connecting related tickers based on various attributes, i.e.
+            p/e, number of employees, etc.
+            `,
+            img: "",
+            repo: "https://www.github.com/erobx/stonks",
+            badges: [
+                {name: "Python", color: "warning"},
+                {name: "Flask", color: "secondary"},
+                {name: "Teamwork", color: "accent"}
             ]
         },
     ]
