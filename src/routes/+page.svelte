@@ -27,7 +27,7 @@
             <div class="max-w-md">
                 <div class="card card-border card-xl bg-base-300 mb-20">
                     <div class="card-body">
-                        <h1 class="mb-5 text-5xl font-bold">Evan Robinson</h1>
+                        <h1 class="mb-5 text-5xl text-success font-bold">Evan Robinson</h1>
                         <p class="mb-5">
                             A team player who loves turning ideas into meaningful solutions.
                             I bring curiosity, creativity, and a collaborative spirit to every project.

@@ -18,7 +18,7 @@
         <div class="lg:hidden ml-2">
             <ThemeController />
         </div>
-        <a class="btn btn-ghost text-xl" href="/">Evan Robinson</a>
+        <a class="btn btn-ghost text-success text-xl" href="/">Evan Robinson</a>
     </div>
     <div class="navbar-end">
         <!-- Smaller screens: Dropdown menu -->
