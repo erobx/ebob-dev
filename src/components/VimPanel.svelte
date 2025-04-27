@@ -114,6 +114,11 @@
                 break
         }
     }
+
+    function handleMenuClick(p: string) {
+        pane = p
+        selected = 0
+    }
 </script>
 
 <div 
@@ -127,9 +132,9 @@
 >
     <div class="md:flex justify-center text-center m-2">
         <h1 class="border p-2 font-bold basis-1/4">Evan Robinson</h1>
-        <div class="basis-1/4" onclick={() => pane = "projects"} role="none"><h1 class="border p-2"><span class="font-bold">p</span> projects</h1></div>
-        <div class="basis-1/4" onclick={() => pane = "skills"} role="none"><h1 class="border p-2"><span class="font-bold">s</span> skills</h1></div>
-        <div class="basis-1/4" onclick={() => pane = "typing"} role="none"><h1 class="border p-2"><span class="font-bold">t</span> typing</h1></div>
+        <div class="basis-1/4" onclick={() => handleMenuClick("projects")} role="none"><h1 class="border p-2"><span class="font-bold">p</span> projects</h1></div>
+        <div class="basis-1/4" onclick={() => handleMenuClick("skils")} role="none"><h1 class="border p-2"><span class="font-bold">s</span> skills</h1></div>
+        <div class="basis-1/4" onclick={() => handleMenuClick("typing")} role="none"><h1 class="border p-2"><span class="font-bold">t</span> typing</h1></div>
     </div>
     {#if pane === "projects"}
         <Projects projects={projects} bind:selected={selected} elementSelected={elementSelected} />
