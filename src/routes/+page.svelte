@@ -19,7 +19,6 @@
     }
 </script>
 
-
 <div class="flex flex-col items-center text-center">
     <!--Hero should contain vim motions in background--> 
     <div class="hero min-h-screen w-full" style={`background-image: url(${url});`}>
