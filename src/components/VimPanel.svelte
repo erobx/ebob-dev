@@ -117,7 +117,7 @@
 </script>
 
 <div 
-    class={`flex flex-col lg:w-3/4 w-full min-h-164 justify-start bg-base-200 
+    class={`flex flex-col w-full lg:w-6xl lg:min-h-164 justify-start bg-base-200 
     text-start p-4 border-2 border-secondary rounded-lg shadow-md overflow-auto 
     outline-none focus:shadow-secondary`}
     id="focus-area"
@@ -144,7 +144,7 @@
         <Search bind:isSearching={isSearching} />
     {/if}
 
-    <div class="flex justify-center gap-4 mt-auto">
+    <div class="hidden md:flex justify-center gap-4 mt-auto">
         <h3 class="font-semibold">↑/↓/←/→ <span class="font-medium opacity-70">navigate</span></h3>
         <h3 class="font-semibold">/ <span class="font-medium opacity-70">search</span></h3>
         <h3 class="font-semibold">enter <span class="font-medium opacity-70">select</span></h3>
