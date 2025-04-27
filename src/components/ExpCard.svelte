@@ -16,7 +16,7 @@
     }
 </script>
 
-<div class="card w-3xl bg-base-100 p-8 rounded-lg shadow-md space-y-2" >
+<div class="card w-full md:w-3xl bg-base-100 p-8 rounded-lg shadow-md space-y-2" >
     <div
         class="flex items-center w-full cursor-pointer"
         role="button"

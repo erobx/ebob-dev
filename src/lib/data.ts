@@ -124,7 +124,7 @@ export function createProjects(): Project[] {
             words from Duolingo and import them into the flashcard program Anki.
             It utilizes an unofficial Duolingo api I rewrote in Go.
             `,
-            img: "",
+            img: "images/anki-duo.png",
             repo: "https://www.github.com/erobx/anki_duo",
             badges: [
                 {name: "Golang", color: "primary"},
@@ -137,7 +137,7 @@ export function createProjects(): Project[] {
             Developed a lexer, parser, interpreter, analyzer and generator to
             create my own programming language that compiles to Java bytecode.
             `,
-            img: "",
+            img: "images/prog-lang.png",
             repo: "https://www.github.com/erobx/PLC_Project",
             badges: [
                 {name: "Java", color: "error"},
@@ -152,7 +152,7 @@ export function createProjects(): Project[] {
             edges connecting related tickers based on various attributes, i.e.
             p/e, number of employees, etc.
             `,
-            img: "",
+            img: "images/stonks.png",
             repo: "https://www.github.com/erobx/stonks",
             badges: [
                 {name: "Python", color: "warning"},

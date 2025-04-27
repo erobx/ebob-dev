@@ -20,9 +20,9 @@
 </script>
 
 
-<div class="flex-col items-center text-center">
+<div class="flex flex-col items-center text-center">
     <!--Hero should contain vim motions in background--> 
-    <div class="hero min-h-screen" style={`background-image: url(${url});`}>
+    <div class="hero min-h-screen w-full" style={`background-image: url(${url});`}>
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="max-w-md">
@@ -71,7 +71,7 @@
         <p class="text-md font-semibold">Click to focus.</p>
         <VimPanel data={data} />
     </div>
-    <div id="experience" class="min-h-fit bg-base-200 p-4 mt-4 flex flex-col items-center">
+    <div id="experience" class="min-h-fit w-full bg-base-200 p-4 mt-4 flex flex-col items-center">
         <header class="mb-4">
             <h1 class="text-2xl font-bold tracking-wider">Professional Experience</h1>
         </header>
