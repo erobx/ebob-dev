@@ -2,58 +2,34 @@
     import ExpCard from "./ExpCard.svelte";
 </script>
 
-<div
-    class="shrink flex-col justify-center text-center px-2 mt-2 w-full lg:max-w-[40vw] md:flex"
->
-    <h3 class="text-2xl">Professional Experience</h3>
+<div class="flex flex-col items-center text-center gap-4">
     <ExpCard
         title={"Solution Cables Inc."}
-        position={"Software Engineer Intern"}
-        location={"Gainesville, FL"}
-        startDate={"September 2024"}
+        position={"Software Engineering Intern"}
+        startDate={"2024"}
         endDate={"Present"}
-        info={`
-            Contributed to the development and maintenance of existing company software, including programming, writing, and debugging code.
-            Created internal tooling to ensure timely delivery of orders.
-        `}
-        skills={["TypeScript, NextJS, PostgreSQL, Prisma, Docker"]}
+        info={[
+            `Built order return tracking to surface product issues and customer behavior insights,
+            boosting decision-making around restocking and quality by 25% in one quarter.`,
+            `Integrated return shipping costs, detailed order itemization and a purchase order system into
+            existing full-stack order management system for improved accuracy using TypeScript,
+            tRPC, and PostgreSQL.`,
+            `Strengthened vendor relationship management to facilitate smooth reordering
+            and maintain supplier connections.`
+        ]}
     />
     <ExpCard
         title={"Fortinet Inc."}
-        position={"Systems Engineer Intern"}
-        location={"Sunrise, FL"}
+        position={"Systems Engineering Intern"}
         startDate={"May 2022"}
         endDate={"August 2022"}
-        info={`
-            Collaborated with team members to develop and configure a network topology using FortiGates.
-            Interacted with the Inside Sales team about technical matters, i.e., networking and product support.
-            Obtained Fortinet Network Security Expert Levels 1, 2 & 3 Certifications.
-        `}
-        skills={["Network Topology, Sales"]}
-    />
-    <ExpCard
-        title={"University of Florida"}
-        position={"Computer Science Major"}
-        location={"Gainesville, FL"}
-        startDate={"June 2021"}
-        endDate={"December 2024"}
-        info={`
-            Graduated from the University of Florida in 3.5 years with my Bachelor's of Science in Computer
-            Science.
-        `}
-        skills={["Software Engineering, Problem Solving, Data Structures"]}
-    />
-    <ExpCard
-        title={"Universidad Carlos III de Madrid"}
-        position={"International Student"}
-        location={"Madrid, Spain"}
-        startDate={"Januaray 2024"}
-        endDate={"May 2024"}
-        info={`
-            Study abroad program focused on computer science core requirements.
-            Experienced Spanish culture and had the chance to meet and connect with students from various European countries.
-            Completed courses: Artificial Intelligence, Numerical Methods and Spanish B1.
-        `}
-        skills={["AI Fundamentals, MATLAB"]}
+        info={[
+            `Configured network topology using FortiGates in collaboration with 10 team members
+            to support secure infrastructure design.`,
+            `Gained foundational knowledge of the OSI model and explored cybersecurity vulnerabilities
+            and mitigation strategies at each layer.`,
+            `Developed strong communication and collaboration skills through mentorship,
+            peer teamwork and relationship-building with supervisor.`
+        ]}
     />
 </div>

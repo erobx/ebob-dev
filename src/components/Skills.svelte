@@ -1,47 +1,43 @@
 <script lang="ts">
-    import {
-        Table,
-        tableMapperValues,
-        type TableSource,
-    } from "@skeletonlabs/skeleton";
-    import { tableSourceValues } from "@skeletonlabs/skeleton";
+    let { skills, selected = $bindable() } = $props()
 
-    const sourceData = [
-        {
-            position: 1,
-            skills: "Languages",
-            tools: "Golang, JavaScript, TypeScript, Python",
-        },
-        {
-            position: 2,
-            skills: "Frontend",
-            tools: "React, NextJS, SvelteKit",
-        },
-        { position: 3, skills: "Backend", tools: "Fiber, Node, Flask, FastAPI, SQL" },
-        { position: 4, skills: "CI/CD", tools: "Git, Docker" },
-        {
-            position: 5,
-            skills: "Data Science",
-            tools: "Numpy, Pandas, Scikit",
-        },
-    ];
-
-    const tableSimple: TableSource = {
-        head: ["Skills", "Tools"],
-        body: tableMapperValues(sourceData, ["skills", "tools"]),
-        meta: tableSourceValues(sourceData),
-    };
+    function selectProject(index: number) {
+        selected = index
+    }
 </script>
 
-<div class="flex justify-center px-2">
-    <div
-        class="card p-4 bg-dark-blue mt-4 rounded-lg w-full text-center shadow-lg"
-    >
-        <Table
-            source={tableSimple}
-            regionHeadCell="text-center text-[#ccccb5] text-xl"
-            regionHead="text-[#23a9d5]"
-            regionCell="text-[#9E9F90]"
-        />
+<div class="grid grid-cols-2">
+        <div id="menu" class="flex flex-col items-center p-2">
+            <h1 class="font-bold mb-2">~ Skills ~</h1>
+            <ul class="text-lg w-full pl-2 pr-2">
+                {#each skills as skill, i}
+                    {#if i === selected && i % 2 === 0}
+                        <li class="bg-primary font-semibold text-info-content">
+                            {skill.name}
+                        </li>
+                    {:else if i === selected}
+                        <li class="bg-secondary font-semibold text-accent-content">
+                            {skill.name}
+                        </li>
+                    {:else}
+                        <li onclick={() => selectProject(i)} role="none">
+                            {skill.name}
+                        </li>
+                    {/if}
+                {/each}
+            </ul>
+        </div>
+
+        {#key selected}
+            <div class="flex flex-col items-center p-2">
+                <h1 class="font-bold mb-2">~ Badges ~</h1>
+                <div class="flex flex-wrap gap-2">
+                    {#each skills[selected].badges as badge}
+                    <li class={`badge badge-lg badge-${badge.color} font-semibold`}>
+                        {badge.name}
+                    </li>
+                    {/each}
+                </div>
+            </div>
+        {/key}
     </div>
-</div>

@@ -1,17 +1,111 @@
 <script lang="ts">
-    import Profile from "../components/Profile.svelte";
+    import Icon from "@iconify/svelte";
+    import VimPanel from "../components/VimPanel.svelte";
     import Experience from "../components/Experience.svelte";
-    import Skills from "../components/Skills.svelte";
+    import Education from "../components/Education.svelte";
+    let url = "https://jonboh.dev/posts/rr/back_and_forth.gif"
+
+    let { data } = $props()
+
+    function handleAnchorClick(event: any) {
+        event.preventDefault()
+        const link = event.currentTarget
+        const anchorId = new URL(link.href).hash.replace('#', '')
+        const anchor = document.getElementById(anchorId)
+        window.scrollTo({
+            top: anchor?.offsetTop,
+            behavior: 'smooth',
+        })
+    }
 </script>
 
-<div class="container sm:p-6 mx-auto p-2 sapce-y-8">
-    <div class="lg:flex xs:flex-col gap-8 justify-around items-start">
-        <div class="flex-col w-full lg:w-1/2 gap-8">
-            <Profile />
-            <Skills />
+
+<div class="flex-col items-center text-center">
+    <!--Hero should contain vim motions in background--> 
+    <div class="hero min-h-screen" style={`background-image: url(${url});`}>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="max-w-md">
+                <div class="card card-border card-xl bg-base-300 mb-20">
+                    <div class="card-body">
+                        <h1 class="mb-5 text-5xl font-bold">Evan Robinson</h1>
+                        <p class="mb-5">
+                            A team player who loves turning ideas into meaningful solutions.
+                            I bring curiosity, creativity, and a collaborative spirit to every project.
+                            (And yes, I use Vim.)
+                        </p>
+                        <div class="flex justify-evenly">
+                            <button class="btn btn-success btn-soft"><a href="#about" onclick={handleAnchorClick}>Learn More</a></button>
+                            <a href="https://www.ebob.dev/resume.pdf" target="_blank">
+                                <button class="btn btn-info btn-soft">
+                                    Résumé <Icon icon="mdi:file-outline" width={20} />
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="flex-col w-full lg:w-1/2 mt-4 lg:mt-8">
-            <Experience />
+    </div>
+    <div id="about" class="flex flex-col items-center gap-2 mt-8">
+        <div class="max-w-md">
+            <!-- svelte-ignore a11y_img_redundant_alt -->
+            <img
+                class="rounded-full object-cover m-auto aspect-square border-1"
+                src="images/profile-pic.jpg"
+                alt="Evan smiling for graduation photo."
+            />
         </div>
+        <div class="max-w-2xl">
+            <h1 class="text-2xl font-bold">About Me</h1>
+            <p class="text-lg">
+            I'm a newly graduated computer science student from the University of Florida,
+            fueled by a passion for crafting impactful solutions. With experience in modern
+            technologies like Golang, React, TypeScript and PostgreSQL, I've built applications
+            that streamline workflows and enhance collaboration.<br><br>
+            I'm eager to continue learning and contribute to innovate projects, 
+            particularly those that bring people together and solve real-world problems.
+            When I'm not coding, you can find me watching any sport, hitting the gym, or typing.
+        </div>
+        <h1 id="projects" class="text-2xl mt-2 font-bold tracking-wider">Motions</h1>
+        <p class="text-md font-semibold">Click to focus.</p>
+        <VimPanel data={data} />
+    </div>
+    <div id="experience" class="min-h-fit bg-base-200 p-4 mt-4 flex flex-col items-center">
+        <header class="mb-4">
+            <h1 class="text-2xl font-bold tracking-wider">Professional Experience</h1>
+        </header>
+        <Experience />
+        <header class="mt-4 mb-4">
+            <h1 class="text-2xl font-bold tracking-wider">Education</h1>
+        </header>
+        <Education />
+    </div>
+    <div id="contact" class="footer footer-horizontal footer-center bg-base-300 rounded p-10">
+        <h1 class="text-2xl font-bold">Contact</h1>
+        <p class="text-lg">
+            If you have any questions or want to collaborate, please reach out!<br>
+            <span>Email: <span class="text-primary font-bold">erob7856@gmail.com</span></span>
+        </p>
+        <div class="flex justify-evenly">
+            <a href="https://www.github.com/erobx" target="_blank">
+                <Icon
+                    icon="mdi:github"
+                    width={40}
+                    class="mx-auto"
+                />
+            </a>
+            <a href="https://www.linkedin.com/in/erob-inson" target="_blank">
+                <Icon
+                    icon="mdi:linkedin"
+                    width={40}
+                    class="mx-auto"
+                />
+            </a>
+        </div>
+        <aside>
+            <p>Copyright @ {new Date().getFullYear()} - All rights reserved</p>
+            <p>Inspiration from terminal.shop</p>
+        </aside>
     </div>
 </div>
