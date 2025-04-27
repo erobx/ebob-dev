@@ -9,8 +9,9 @@
     let words: string[] = ["do", "hello", "okay", "well"]
 </script>
 
-<div class="flex flex-col">
-    <h1 class="font-bold text-lg self-center">Test your speed</h1>
-    <div class="flex gap-2">
+<div class="flex flex-col items-center">
+    <h1 class="font-bold text-lg">Test your speed</h1>
+    <div class="flex mt-35 gap-2">
+        <h1>🚧Under contstruction🚧</h1>
     </div>
 </div>

@@ -1,6 +1,7 @@
 <script lang="ts">
     let { isSearching = $bindable() } = $props()
     let letters: string = $state(" ")
+    let matching: string[] = $state([])
 
     $effect(() => {
         let fa = document.getElementById("search")
@@ -28,7 +29,9 @@
             return
         }
         if (event.key === "Enter") {
-
+            letters = " "
+            isSearching = false
+            document.getElementById("focus-area")?.focus()
             return
         }
         if (event.key.length === 1) {
@@ -37,11 +40,13 @@
                 : event.key.toLowerCase()
             letters += charToAdd
         }
+
+        // pattern match
     }
 </script>
 
-<div class="mt-auto bg-base-300">
-    <h1>Search</h1>
+<div class="mt-auto bg-base-300 rounded-lg p-1">
+    <h1 class="font-semibold">Search</h1>
     <div 
         id="search" 
         class="outline-none border-2"
