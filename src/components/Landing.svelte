@@ -71,7 +71,7 @@
 </script>
 
 <div transition:fade class="flex justify-center items-center h-screen bg-base-100">
-    <div class="flex flex-col font-semibold text-lg w-1/4">
+    <div class="flex flex-col font-semibold text-lg">
         <h1><span id="f" class="text-primary">f</span><span class="text-primary">unc</span> <span class="text-red-400">main</span><span class="text-yellow-300">{openParen}{closingParen} {openBracket}</span></h1>
         <h1 class="ml-4">
             <span id="fmt">f</span>mt.<span class="text-red-400">Println</span><span class="text-purple-400">{openParen}</span>"<span id="quotes" class="text-info">{initMsg}</span>"<span class="text-purple-400">{closingParen}</span>
