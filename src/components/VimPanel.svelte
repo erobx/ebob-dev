@@ -8,6 +8,7 @@
     let { data } = $props() // monkeytype speeds
     let selected: number = $state(0)
     let focusElement: HTMLElement | null = $state(null)
+    let isFocused: boolean = $state(false)
     let elementSelected: string = $state("")
     let pane: string = $state("projects")
     let isSearching: boolean = $state(false)
@@ -115,6 +116,14 @@
         }
     }
 
+    function handleFocus() {
+        isFocused = true
+    }
+
+    function handleBlur() {
+        isFocused = false
+    }
+
     function handleMenuClick(p: string) {
         pane = p
         selected = 0
@@ -122,14 +131,24 @@
 </script>
 
 <div 
-    class={`flex flex-col w-full lg:w-6xl lg:min-h-164 justify-start bg-base-200 
-    text-start p-4 border-2 border-secondary rounded-lg shadow-md overflow-auto 
-    outline-none focus:shadow-secondary`}
+    class={`flex flex-col w-full min-h-9/12 lg:w-6xl lg:min-h-164 justify-start bg-base-200 
+    text-start p-4 border-2 border-secondary rounded-lg shadow-md overflow-auto
+    outline-none focus:shadow-secondary relative`}
     id="focus-area"
     role="textbox"
     tabindex="0"
     onkeydown={handleKeyDown}
+    onfocus={handleFocus}
+    onblur={handleBlur}
 >
+    {#if !isFocused}
+        <div class="absolute inset-0 z-10 backdrop-blur-xs flex justify-center items-center">
+            <div class="font-semibold text-success">
+                Click to focus
+            </div>
+        </div>
+    {/if}   
+
     <div class="md:flex justify-center text-center m-2">
         <h1 class="border p-2 font-bold basis-1/4">Evan Robinson</h1>
         <div class="basis-1/4" onclick={() => handleMenuClick("projects")} role="none"><h1 class="border p-2"><span class="font-bold">p</span> projects</h1></div>
@@ -150,9 +169,9 @@
     {/if}
 
     <div class="hidden md:flex justify-center gap-4 mt-auto">
-        <h3 class="font-semibold">↑/↓/←/→ <span class="font-medium opacity-70">navigate</span></h3>
-        <h3 class="font-semibold">/ <span class="font-medium opacity-70">search</span></h3>
-        <h3 class="font-semibold">enter <span class="font-medium opacity-70">select</span></h3>
-        <h3 class="font-semibold">q <span class="font-medium opacity-70">unfocus</span></h3>
+        <h3 class="font-semibold">↑/↓/←/→ <span class={`font-medium ${isFocused ? "opacity-70" : "opacity-100"}`}>navigate</span></h3>
+        <!--<h3 class="font-semibold">/ <span class="font-medium opacity-70">search</span></h3>-->
+        <h3 class="font-semibold">enter <span class={`font-medium ${isFocused ? "opacity-70" : "opacity-100"}`}>select</span></h3>
+        <h3 class="font-semibold">q <span class={`font-medium ${isFocused ? "opacity-70" : "opacity-100"}`}>unfocus</span></h3>
     </div>
 </div>

@@ -31,7 +31,6 @@
                         <p class="mb-5">
                             A team player who loves turning ideas into meaningful solutions.
                             I bring curiosity, creativity, and a collaborative spirit to every project.
-                            (And yes, I use Vim.)
                         </p>
                         <div class="flex justify-evenly">
                             <button class="btn btn-success btn-soft"><a href="#about" onclick={handleAnchorClick}>Learn More</a></button>
@@ -66,8 +65,7 @@
             particularly those that bring people together and solve real-world problems.
             When I'm not coding, you can find me watching any sport, hitting the gym, or typing.
         </div>
-        <h1 id="projects" class="text-2xl mt-2 font-bold tracking-wider">Motions</h1>
-        <p class="text-md font-semibold">Click to focus.</p>
+        <h1 id="projects" class="text-2xl mt-2 mb-2 font-bold tracking-wider">Motions</h1>
         <VimPanel data={data} />
     </div>
     <div id="experience" class="min-h-fit w-full bg-base-200 p-4 mt-4 flex flex-col items-center">

@@ -122,7 +122,7 @@ export function createProjects(): Project[] {
             description: `
             A cli tool that allows a user to retrieve their studied vocab
             words from Duolingo and import them into the flashcard program Anki.
-            It utilizes an unofficial Duolingo api I rewrote in Go.
+            It utilizes an unofficial Duolingo API I rewrote in Go.
             `,
             img: "images/anki-duo.png",
             repo: "https://www.github.com/erobx/anki_duo",

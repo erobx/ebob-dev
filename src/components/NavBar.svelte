@@ -22,13 +22,13 @@
     </div>
     <div class="navbar-end">
         <!-- Smaller screens: Dropdown menu -->
-        <div class="dropdown dropdown-end lg:hidden">
+        <div class="dropdown dropdown-end md:hidden">
             <button aria-label="dropdown" class="btn btn-ghost">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
-            <ul role="menu" tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+            <ul role="menu" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                 <li><a href="#about" on:click={handleAnchorClick}>About</a></li>
                 <li><a href="#projects" on:click={handleAnchorClick}>Projects</a></li>
                 <li><a href="#experience" on:click={handleAnchorClick}>Experience</a></li>
