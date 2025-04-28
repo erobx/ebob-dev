@@ -77,7 +77,7 @@ export function createProjects(): Project[] {
             A web application centered around group-based skin upgrading within the 
             Counter-Strike 2 economic system.
             `,
-            img: "",
+            img: "images/csupgrade.png",
             link: "",
             repo: "https://github.com/erobx/csupgrade",
             badges: [
