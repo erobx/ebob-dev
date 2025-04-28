@@ -33,9 +33,15 @@
                 <h1 class="font-bold mb-2">~ Badges ~</h1>
                 <div class="flex flex-wrap gap-2">
                     {#each skills[selected].badges as badge}
-                    <li class={`badge badge-lg badge-${badge.color} font-semibold`}>
-                        {badge.name}
-                    </li>
+                    {#if badge.color === "primary"}
+                        <li class="badge badge-lg badge-primary font-semibold">
+                            {badge.name}
+                        </li>
+                    {:else if badge.color === "info"}
+                        <li class="badge badge-lg badge-secondary font-semibold">
+                            {badge.name}
+                        </li>
+                    {/if}
                     {/each}
                 </div>
             </div>

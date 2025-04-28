@@ -28,7 +28,7 @@ export function createSkills(): Skill[] {
                 {name: "Python", color: "primary", iconName: ""}, 
                 {name: "Java", color: "primary", iconName: ""},
                 {name: "C++", color: "primary", iconName: ""},
-                {name: "HTML/CSS", color: "primary", iconName: ""}
+                {name: "CSS", color: "primary", iconName: ""}
             ]
         },
         {
@@ -53,17 +53,23 @@ export function createSkills(): Skill[] {
             name: "Frameworks",
             badges: [
                 {name: "React", color: "info"},
-                {name: "Svelte", color: "info"},
+                {name: "SvelteKit", color: "info"},
+            ]
+        },
+        {
+            name: "Cloud Computing",
+            badges: [
+                {name: "Cloudflare", color: "primary"}
             ]
         },
         {
             name: "Libraries",
             badges: [
-                {name: "TailwindCSS", color: "primary", iconName: ""},
-                {name: "tRPC", color: "primary", iconName: ""},
-                {name: "Numpy", color: "primary", iconName: ""}, 
-                {name: "Scikit", color: "primary", iconName: ""},
-                {name: "Pandas", color: "primary", iconName: ""}
+                {name: "TailwindCSS", color: "info", iconName: ""},
+                {name: "tRPC", color: "info", iconName: ""},
+                {name: "Numpy", color: "info", iconName: ""}, 
+                {name: "Scikit", color: "info", iconName: ""},
+                {name: "Pandas", color: "info", iconName: ""}
             ]
         }
     ]
@@ -75,15 +81,19 @@ export function createProjects(): Project[] {
             name: "CSUpgrade",
             description: `
             A web application centered around group-based skin upgrading within the 
-            Counter-Strike 2 economic system.
+            Counter-Strike 2 economic system. Users compete against one another
+            to obtain better quality skins. It is built using Golang, React,
+            TypeScript, Tailwindcss, and R1 for image storage.
             `,
             img: "images/csupgrade.png",
             link: "",
             repo: "https://github.com/erobx/csupgrade",
             badges: [
                 {name: "Golang", color: "primary", iconName: ""},
-                {name: "React", color: "info", iconName: ""},
-                {name: "PostgreSQL", color: "primary", iconName: ""}
+                {name: "React", color: "secondary", iconName: ""},
+                {name: "PostgreSQL", color: "primary", iconName: ""},
+                {name: "R1", color: "warning", iconName: ""},
+                {name: "Unit Testing", color: "info"}
             ]
         },
         {
@@ -94,10 +104,10 @@ export function createProjects(): Project[] {
             repo: "https://github.com/Code-Goblins2024/swamp-review",
             badges: [
                 {name: "JavaScript", color: "secondary"},
-                {name: "React", color: "info"},
+                {name: "React", color: "primary"},
                 {name: "Agile", color: "accent"},
                 {name: "PostgreSQL", color: "primary"},
-                {name: "Teamwork", color: "info"},
+                {name: "Teamwork", color: "accent"},
                 {name: "Backend", color: "info"}
             ]
         },
@@ -108,13 +118,14 @@ export function createProjects(): Project[] {
             of my skills, experience, and projects. It is built with
             SvelteKit, TypeScript, Tailwindcss and DaisyUI.
             `,
-            img: "",
+            img: "images/ebob-dev.png",
             link: "https://www.ebob.dev",
             repo: "https://www.github.com/erobx/ebob-dev",
             badges: [
                 {name: "Svelte", color: "secondary"},
                 {name: "TypeScript", color: "primary"},
-                {name: "Tailwindcss", color: "info"}
+                {name: "Tailwindcss", color: "secondary"},
+                {name: "Cloudflare Pages", color: "info"}
             ]
         },
         {
@@ -134,13 +145,16 @@ export function createProjects(): Project[] {
         {
             name: "Programming Language",
             description: `
-            Developed a lexer, parser, interpreter, analyzer and generator to
-            create my own programming language that compiles to Java bytecode.
+            A functioning program language built using Java that compiles to
+            Java bytecode. Users can create any program they want, such as
+            FizzBuzz!
             `,
             img: "images/prog-lang.png",
             repo: "https://www.github.com/erobx/PLC_Project",
             badges: [
                 {name: "Java", color: "error"},
+                {name: "Unit Testing", color: "info"},
+                {name: "Harness Testing", color: "primary"},
                 {name: "Teamwork", color: "accent"},
             ]
         },

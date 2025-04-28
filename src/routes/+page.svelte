@@ -3,7 +3,7 @@
     import VimPanel from "../components/VimPanel.svelte";
     import Experience from "../components/Experience.svelte";
     import Education from "../components/Education.svelte";
-    let url = "https://jonboh.dev/posts/rr/back_and_forth.gif"
+    let gif = "images/hero.gif"
 
     let { data } = $props()
 
@@ -21,7 +21,7 @@
 
 <div class="flex flex-col items-center text-center">
     <!--Hero should contain vim motions in background--> 
-    <div class="hero min-h-screen w-full" style={`background-image: url(${url});`}>
+    <div class="hero min-h-screen w-full" style={`background-image: url(${gif});`}>
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="max-w-md">
@@ -82,7 +82,7 @@
         <h1 class="text-2xl font-bold">Contact</h1>
         <p class="text-lg">
             If you have any questions or want to collaborate, please reach out!<br>
-            <span>Email: <span class="text-primary font-bold">erob7856@gmail.com</span></span>
+            <span>Email: <span class="text-primary font-bold hover:underline"><a href="mailto:evan.robinson@ebob.dev">evan.robinson@ebob.dev</a></span></span>
         </p>
         <div class="flex justify-evenly">
             <a href="https://www.github.com/erobx" target="_blank">

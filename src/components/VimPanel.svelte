@@ -120,8 +120,11 @@
         isFocused = true
     }
 
-    function handleBlur() {
-        isFocused = false
+    function handleBlur(event: any) {
+        if (!event.currentTarget.contains(event.relatedTarget)) {
+            isFocused = false
+            return
+        }
     }
 
     function handleMenuClick(p: string) {
