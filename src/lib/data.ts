@@ -86,7 +86,7 @@ export function createProjects(): Project[] {
             TypeScript, Tailwindcss, and R1 for image storage.
             `,
             img: "images/csupgrade.png",
-            link: "",
+            link: "https://csupgrade.ebob.dev/",
             repo: "https://github.com/erobx/csupgrade",
             badges: [
                 {name: "Golang", color: "primary", iconName: ""},
