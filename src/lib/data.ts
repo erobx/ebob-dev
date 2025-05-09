@@ -52,13 +52,17 @@ export function createSkills(): Skill[] {
         {
             name: "Frameworks",
             badges: [
+                {name: "Fiber", color: "info"},
                 {name: "React", color: "info"},
-                {name: "SvelteKit", color: "info"},
+                {name: "NodeJS", color: "info"},
+                {name: "Flask", color: "info"},
+                {name: "Svelte", color: "info"},
             ]
         },
         {
             name: "Cloud Computing",
             badges: [
+                {name: "AWS", color: "primary"},
                 {name: "Cloudflare", color: "primary"}
             ]
         },
@@ -83,7 +87,7 @@ export function createProjects(): Project[] {
             A web application centered around group-based skin upgrading within the 
             Counter-Strike 2 economic system. Users compete against one another
             to obtain better quality skins. It is built using Golang, React,
-            TypeScript, Tailwindcss, and R1 for image storage.
+            TypeScript, Tailwindcss, and R1 for image storage and hosted on AWS.
             `,
             img: "images/csupgrade.png",
             link: "https://csupgrade.ebob.dev/",
@@ -98,7 +102,8 @@ export function createProjects(): Project[] {
         },
         {
             name: "SwampReview",
-            description: "Website for student reviews about on-campus living options for the University of Florida.",
+            description: `Website for student reviews about on-campus living options 
+            for the University of Florida. Serverless infrastructure powered by Netlify and Supabase.`,
             img: "images/swamp-review.png",
             link: "https://swampreview.netlify.app/",
             repo: "https://github.com/Code-Goblins2024/swamp-review",

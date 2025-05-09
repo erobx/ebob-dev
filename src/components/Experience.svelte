@@ -9,13 +9,14 @@
         startDate={"2024"}
         endDate={"Present"}
         info={[
-            `Built order return tracking to surface product issues and customer behavior insights,
-            boosting decision-making around restocking and quality by 25% in one quarter.`,
-            `Integrated return shipping costs, detailed order itemization and a purchase order system into
-            existing full-stack order management system for improved accuracy using TypeScript,
-            tRPC, and PostgreSQL.`,
-            `Strengthened vendor relationship management to facilitate smooth reordering
-            and maintain supplier connections.`
+            `Built an order return tracking system to identify trends in returned products, 
+            helping analyze the reasons behind returns and inform restocking decisions.`,
+            `Integrated return shipping costs, detailed order itemization, and a purchase
+            order system into an in-house warehouse management software, enhancing its
+            functionality and accuracy using TypeScript, tRPC, and PostgreSQL.`,
+            `Streamlined vendor relationship management by creating relational database 
+            connections linking customer orders to corresponding suppliers, simplifying 
+            reordering processes and maintaining strong supplier relationships.`
         ]}
     />
     <ExpCard
@@ -29,7 +30,7 @@
             `Gained foundational knowledge of the OSI model and explored cybersecurity vulnerabilities
             and mitigation strategies at each layer.`,
             `Developed strong communication and collaboration skills through mentorship,
-            peer teamwork and relationship-building with supervisor.`
+            peer teamwork and relationship-building with my supervisor.`
         ]}
     />
 </div>
