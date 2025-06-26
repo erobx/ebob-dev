@@ -87,7 +87,7 @@ export function createProjects(): Project[] {
             A web application centered around group-based skin upgrading within the 
             Counter-Strike 2 economic system. Users compete against one another
             to obtain better quality skins. It is built using Golang, React,
-            TypeScript, Tailwindcss, and R1 for image storage and hosted on AWS.
+            TypeScript, Tailwindcss, and R2 for image storage and hosted on AWS.
             `,
             img: "images/csupgrade.png",
             link: "https://csupgrade.ebob.dev/",
@@ -96,7 +96,7 @@ export function createProjects(): Project[] {
                 {name: "Golang", color: "primary", iconName: ""},
                 {name: "React", color: "secondary", iconName: ""},
                 {name: "PostgreSQL", color: "primary", iconName: ""},
-                {name: "R1", color: "warning", iconName: ""},
+                {name: "R2", color: "warning", iconName: ""},
                 {name: "Unit Testing", color: "info"}
             ]
         },
