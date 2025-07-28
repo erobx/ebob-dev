@@ -82,7 +82,7 @@ export function createSkills(): Skill[] {
 export function createProjects(): Project[] {
     return [
         {
-            name: "CSUpgrade",
+            name: "Skin Forge",
             description: `
             A web application centered around group-based skin upgrading within the 
             Counter-Strike 2 economic system. Users compete against one another
@@ -91,7 +91,6 @@ export function createProjects(): Project[] {
             `,
             img: "images/csupgrade.png",
             link: "https://csupgrade.ebob.dev/",
-            repo: "https://github.com/erobx/csupgrade",
             badges: [
                 {name: "Golang", color: "primary", iconName: ""},
                 {name: "React", color: "secondary", iconName: ""},
