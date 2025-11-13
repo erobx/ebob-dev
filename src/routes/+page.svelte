@@ -65,7 +65,7 @@
             particularly those that bring people together and solve real-world problems.
             When I'm not coding, you can find me watching any sport, hitting the gym, or typing.
         </div>
-        <h1 id="projects" class="text-2xl mt-2 mb-2 font-bold tracking-wider">Motions</h1>
+        <h1 id="projects" class="text-2xl mt-2 mb-2 font-bold tracking-wider">Portfolio</h1>
         <VimPanel data={data} />
     </div>
     <div id="experience" class="min-h-fit w-full bg-base-200 p-4 mt-4 flex flex-col items-center">
