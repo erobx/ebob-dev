@@ -4,10 +4,21 @@
 
 <div class="flex flex-col items-center text-center gap-4">
     <ExpCard
+        title={"RockED"}
+        position={"Implementation Specialist"}
+        startDate={"November 2025"}
+        endDate={"Present"}
+        info={[
+            `Configured and implemented RockED Booster for 100+ dealerships in North America.`,
+            `Improved implementation pipeline by 75% ensuring a 2 week minimum timeline.`,
+        ]}
+    />
+
+    <ExpCard
         title={"Solution Cables Inc."}
         position={"Software Engineering Intern"}
-        startDate={"2024"}
-        endDate={"Present"}
+        startDate={"September 2024"}
+        endDate={"December 2024"}
         info={[
             `Built an order return tracking system to identify trends in returned products, 
             helping analyze the reasons behind returns and inform restocking decisions.`,

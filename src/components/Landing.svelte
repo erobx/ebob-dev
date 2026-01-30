@@ -30,15 +30,15 @@
 
             fa.style.backgroundColor = "var(--color-secondary)"
             fa.style.animation = "var(--animate-pulse)"
-        }, 500)
+        }, 200)
 
         setTimeout(() => {
             motions = [...motions, "c"]
-        }, 700)
+        }, 300)
 
         setTimeout(() => {
             motions = [...motions, "i"]
-        }, 900)
+        }, 400)
 
         setTimeout(() => {
             if (!fa) return
@@ -51,12 +51,12 @@
             fa.innerText = ""
 
             setInterval(typeChar, 100, fa)
-        }, 1000)
+        }, 500)
 
 
         setTimeout(() => {
             isEntering = false
-        }, 2000)
+        }, 600)
     })
 
     function typeChar(fa: HTMLElement) {

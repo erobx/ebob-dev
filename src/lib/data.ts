@@ -82,6 +82,22 @@ export function createSkills(): Skill[] {
 export function createProjects(): Project[] {
     return [
         {
+            name: "SwampReview",
+            description: `Website for student reviews about on-campus living options 
+            for the University of Florida. Serverless infrastructure powered by Netlify and Supabase.`,
+            img: "images/swamp-review.png",
+            link: "https://swampreview.netlify.app/",
+            repo: "https://github.com/Code-Goblins2024/swamp-review",
+            badges: [
+                {name: "JavaScript", color: "secondary"},
+                {name: "React", color: "primary"},
+                {name: "Agile", color: "accent"},
+                {name: "PostgreSQL", color: "primary"},
+                {name: "Teamwork", color: "accent"},
+                {name: "Backend", color: "info"}
+            ]
+        },
+        {
             name: "Skin Forge",
             description: `
             A web application centered around group-based skin upgrading within the 
@@ -97,22 +113,6 @@ export function createProjects(): Project[] {
                 {name: "PostgreSQL", color: "primary", iconName: ""},
                 {name: "R2", color: "warning", iconName: ""},
                 {name: "Unit Testing", color: "info"}
-            ]
-        },
-        {
-            name: "SwampReview",
-            description: `Website for student reviews about on-campus living options 
-            for the University of Florida. Serverless infrastructure powered by Netlify and Supabase.`,
-            img: "images/swamp-review.png",
-            link: "https://swampreview.netlify.app/",
-            repo: "https://github.com/Code-Goblins2024/swamp-review",
-            badges: [
-                {name: "JavaScript", color: "secondary"},
-                {name: "React", color: "primary"},
-                {name: "Agile", color: "accent"},
-                {name: "PostgreSQL", color: "primary"},
-                {name: "Teamwork", color: "accent"},
-                {name: "Backend", color: "info"}
             ]
         },
         {

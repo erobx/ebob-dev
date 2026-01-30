@@ -64,6 +64,7 @@
             I'm eager to continue learning and contribute to innovate projects, 
             particularly those that bring people together and solve real-world problems.
             When I'm not coding, you can find me watching any sport, hitting the gym, or typing.
+            </p>
         </div>
         <h1 id="projects" class="text-2xl mt-2 mb-2 font-bold tracking-wider">Portfolio</h1>
         <VimPanel data={data} />
