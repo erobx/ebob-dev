@@ -9,8 +9,14 @@
         startDate={"November 2025"}
         endDate={"Present"}
         info={[
-            `Configured and implemented RockED Booster for 100+ dealerships in North America.`,
-            `Improved implementation pipeline by 75% ensuring a 2 week minimum timeline.`,
+            `Built 9 production tools and automations that eliminate manual data work:
+             SFTP DMS data pulls, a daily scheduled CSV export pipeline, and a browser
+             extension for vendor feed setup.`,
+            `Operationalized and lead the design of an AI tool that automates Performance Manager
+             call prep which cut hours of manual CRM research and reporting per call.`,
+            `Owned end-to-end implementation for 200+ dealership Booster activations,
+             overseeing the entire process from DMS feed setup and OpCode configuration
+             through advisor onboarding and launch.`,
         ]}
     />
 
