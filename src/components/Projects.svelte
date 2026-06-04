@@ -29,10 +29,8 @@
         </ul>
     </div>
 
-    {#key selected}
-        <div class="flex flex-col items-center p-2">
-            <h1 class="font-bold mb-2">~ Details ~</h1>
-            <Project project={projects[selected]} elementSelected={elementSelected} />
-        </div>
-    {/key}
+    <div class="flex flex-col items-center p-2 min-h-80">
+        <h1 class="font-bold mb-2">~ Details ~</h1>
+        <Project project={projects[selected]} elementSelected={elementSelected} />
+    </div>
 </div>

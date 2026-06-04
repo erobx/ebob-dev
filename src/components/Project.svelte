@@ -4,12 +4,15 @@
 </script>
 
 <div class="flex flex-col text-center gap-2">
-    {#if project.img}
-        <img
-            src={project.img}
-            alt={project.name}
-        />
-    {/if}
+    <div class="w-full h-48">
+        {#if project.img}
+            <img
+                class="w-full h-full object-cover"
+                src={project.img}
+                alt={project.name}
+            />
+        {/if}
+    </div>
     <p>{project.description}</p>
 
     <div class="flex justify-center gap-4">

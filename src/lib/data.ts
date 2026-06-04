@@ -86,14 +86,14 @@ export function createProjects(): Project[] {
             description: `Website for student reviews about on-campus living options 
             for the University of Florida. Serverless infrastructure powered by Netlify and Supabase.`,
             img: "images/swamp-review.png",
-            link: "https://swampreview.netlify.app/",
+            //link: "https://swampreview.netlify.app/",
             repo: "https://github.com/Code-Goblins2024/swamp-review",
             badges: [
                 {name: "JavaScript", color: "secondary"},
                 {name: "React", color: "primary"},
                 {name: "Agile", color: "accent"},
                 {name: "PostgreSQL", color: "primary"},
-                {name: "Teamwork", color: "accent"},
+                {name: "Project Management", color: "accent"},
                 {name: "Backend", color: "info"}
             ]
         },
@@ -106,7 +106,7 @@ export function createProjects(): Project[] {
             TypeScript, Tailwindcss, and R2 for image storage and hosted on AWS.
             `,
             img: "images/csupgrade.png",
-            link: "https://csupgrade.ebob.dev/",
+            //link: "https://csupgrade.ebob.dev/",
             badges: [
                 {name: "Golang", color: "primary", iconName: ""},
                 {name: "React", color: "secondary", iconName: ""},
@@ -116,7 +116,7 @@ export function createProjects(): Project[] {
             ]
         },
         {
-            name: "Portfolio",
+            name: "Personal Website",
             description: `
             The website you're currently on! A digital representation
             of my skills, experience, and projects. It is built with
@@ -159,7 +159,7 @@ export function createProjects(): Project[] {
                 {name: "Java", color: "error"},
                 {name: "Unit Testing", color: "info"},
                 {name: "Harness Testing", color: "primary"},
-                {name: "Teamwork", color: "accent"},
+                {name: "Project Management", color: "accent"},
             ]
         },
         {
@@ -175,7 +175,7 @@ export function createProjects(): Project[] {
             badges: [
                 {name: "Python", color: "warning"},
                 {name: "Flask", color: "secondary"},
-                {name: "Teamwork", color: "accent"}
+                {name: "Project Management", color: "accent"}
             ]
         },
     ]

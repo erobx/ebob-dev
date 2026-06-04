@@ -8,7 +8,7 @@
     let { data } = $props() // monkeytype speeds
     let selected: number = $state(0)
     let focusElement: HTMLElement | null = $state(null)
-    let isFocused: boolean = $state(false)
+    let isFocused: boolean = $state(true)
     let elementSelected: string = $state("")
     let pane: string = $state("projects")
     let isSearching: boolean = $state(false)
@@ -20,15 +20,14 @@
 
         if (isSearching) return
 
-        let fa = document.getElementById("focus-area")
+        //let fa = document.getElementById("focus-area")
         switch (event.key) {
             case 'q':
-                fa?.blur()
+                //fa?.blur()
                 break
             case '/':
                 // search
-                isSearching = true
-                fa?.blur()
+                //isSearching = true
                 break
             case 'Enter':
                 if (elementSelected === "link" || elementSelected === "repo") {
@@ -117,14 +116,14 @@
     }
 
     function handleFocus() {
-        isFocused = true
+        //isFocused = true
     }
 
     function handleBlur(event: any) {
-        if (!event.currentTarget.contains(event.relatedTarget)) {
-            isFocused = false
-            return
-        }
+        //if (!event.currentTarget.contains(event.relatedTarget)) {
+        //    isFocused = false
+        //    return
+        //}
     }
 
     function handleMenuClick(p: string) {
@@ -134,7 +133,7 @@
 </script>
 
 <div 
-    class={`flex flex-col w-full min-h-9/12 lg:w-6xl lg:min-h-164 justify-start bg-base-200 
+    class={`flex flex-col w-full lg:h-[600px] justify-start bg-base-200
     text-start p-4 border-2 border-secondary rounded-lg shadow-md overflow-auto
     outline-none focus:shadow-secondary relative`}
     id="focus-area"
@@ -175,6 +174,6 @@
         <h3 class="font-semibold">↑/↓/←/→ <span class={`font-medium ${isFocused ? "opacity-70" : "opacity-100"}`}>navigate</span></h3>
         <!--<h3 class="font-semibold">/ <span class="font-medium opacity-70">search</span></h3>-->
         <h3 class="font-semibold">enter <span class={`font-medium ${isFocused ? "opacity-70" : "opacity-100"}`}>select</span></h3>
-        <h3 class="font-semibold">q <span class={`font-medium ${isFocused ? "opacity-70" : "opacity-100"}`}>unfocus</span></h3>
+        <!--<h3 class="font-semibold">q <span class={`font-medium ${isFocused ? "opacity-70" : "opacity-100"}`}>unfocus</span></h3>-->
     </div>
 </div>

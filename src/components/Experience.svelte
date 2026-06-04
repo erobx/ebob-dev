@@ -2,14 +2,14 @@
     import ExpCard from "./ExpCard.svelte";
 </script>
 
-<div class="flex flex-col items-center text-center gap-4">
+<div class="flex flex-col items-center text-center md:items-start md:text-left gap-4 w-full">
     <ExpCard
         title={"RockED"}
         position={"Implementation Specialist"}
         startDate={"November 2025"}
         endDate={"Present"}
         info={[
-            `Built 9 production tools and automations that eliminate manual data work:
+            `Built 9 production tools and automations that eliminated manual data work:
              SFTP DMS data pulls, a daily scheduled CSV export pipeline, and a browser
              extension for vendor feed setup.`,
             `Operationalized and lead the design of an AI tool that automates Performance Manager

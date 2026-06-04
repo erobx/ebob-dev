@@ -2,7 +2,7 @@
     import ExpCard from "./ExpCard.svelte";
 </script>
 
-<div class="flex flex-col items-center text-center gap-4">
+<div class="flex flex-col items-center text-center md:items-start md:text-left gap-4 w-full">
     <ExpCard
         title={"University of Florida"}
         position={"Computer Science Major"}

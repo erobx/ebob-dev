@@ -3,7 +3,7 @@
     import VimPanel from "../components/VimPanel.svelte";
     import Experience from "../components/Experience.svelte";
     import Education from "../components/Education.svelte";
-    let gif = "images/hero.gif"
+    let tf2 = "images/tf2-team.webp"
 
     let { data } = $props()
 
@@ -20,8 +20,8 @@
 </script>
 
 <div class="flex flex-col items-center text-center">
-    <!--Hero should contain vim motions in background--> 
-    <div class="hero min-h-screen w-full" style={`background-image: url(${gif});`}>
+    <!--
+    <div class="hero min-h-screen w-full" style={`background-image: url(${tf2});`}>
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="max-w-md">
@@ -29,8 +29,7 @@
                     <div class="card-body">
                         <h1 class="mb-5 text-5xl text-success font-bold">Evan Robinson</h1>
                         <p class="mb-5">
-                            A team player who loves turning ideas into meaningful solutions.
-                            I bring curiosity, creativity, and a collaborative spirit to every project.
+                            An inquisitive mind searching for interesting problems.
                         </p>
                         <div class="flex justify-evenly">
                             <button class="btn btn-success btn-soft"><a href="#about" onclick={handleAnchorClick}>Learn More</a></button>
@@ -45,33 +44,36 @@
             </div>
         </div>
     </div>
-    <div id="about" class="flex flex-col items-center gap-2 mt-8">
-        <div class="max-w-md">
-            <!-- svelte-ignore a11y_img_redundant_alt -->
-            <img
-                class="rounded-full object-cover m-auto aspect-square border-1"
-                src="images/profile-pic.jpg"
-                alt="Evan smiling for graduation photo."
-            />
+    -->
+    <div id="about" class="flex flex-col lg:flex-row items-center justify-evenly gap-10 mt-10 w-full px-4 lg:px-8">
+        <div class="flex flex-col items-center gap-6 w-full lg:w-96 lg:shrink-0">
+            <div class="max-w-xs">
+                <!-- svelte-ignore a11y_img_redundant_alt -->
+                <img
+                    class="rounded-full object-cover m-auto aspect-square border-1"
+                    src="images/profile-pic.jpeg"
+                    alt="Evan smiling for graduation photo."
+                />
+            </div>
+            <div class="w-full lg:max-w-none">
+                <p class="text-lg">
+                    Welcome! I'm an <b>Implementation Specialist</b> for RockED - a mirco-learning
+                    platform for the automotive industry. I run the implementation,
+                    onboarding, and support of dealerships across North America for <b>RockED Booster</b>.
+                <br><br>
+                    When not working, you can find me gardening, working out, or playing
+                    video games with friends.
+                </p>
+            </div>
         </div>
-        <div class="max-w-2xl">
-            <h1 class="text-2xl font-bold">About Me</h1>
-            <p class="text-lg">
-            I'm a newly graduated computer science student from the University of Florida,
-            fueled by a passion for crafting impactful solutions. With experience in modern
-            technologies like Golang, React, TypeScript and PostgreSQL, I've built applications
-            that streamline workflows and enhance collaboration.<br><br>
-            I'm eager to continue learning and contribute to innovate projects, 
-            particularly those that bring people together and solve real-world problems.
-            When I'm not coding, you can find me watching any sport, hitting the gym, or typing.
-            </p>
+        <div class="flex flex-col items-center w-full lg:flex-1 lg:min-w-0 lg:max-w-4xl">
+            <h1 id="projects" class="text-2xl mb-2 font-bold tracking-wider">Projects</h1>
+            <VimPanel data={data} />
         </div>
-        <h1 id="projects" class="text-2xl mt-2 mb-2 font-bold tracking-wider">Portfolio</h1>
-        <VimPanel data={data} />
     </div>
-    <div id="experience" class="min-h-fit w-full bg-base-200 p-4 mt-4 flex flex-col items-center">
+    <div id="experience" class="min-h-fit w-full bg-base-200 p-4 mt-4 flex flex-col items-center md:items-start md:px-12">
         <header class="mb-4">
-            <h1 class="text-2xl font-bold tracking-wider">Professional Experience</h1>
+            <h1 class="text-2xl font-bold tracking-wider">Experience</h1>
         </header>
         <Experience />
         <header class="mt-4 mb-4">
