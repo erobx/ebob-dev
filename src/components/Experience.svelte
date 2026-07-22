@@ -9,14 +9,13 @@
         startDate={"November 2025"}
         endDate={"Present"}
         info={[
-            `Built 9 production tools and automations that eliminated manual data work:
-             SFTP DMS data pulls, a daily scheduled CSV export pipeline, and a browser
-             extension for vendor feed setup.`,
-            `Operationalized and lead the design of an AI tool that automates Performance Manager
-             call prep which cut hours of manual CRM research and reporting per call.`,
-            `Owned end-to-end implementation for 200+ dealership Booster activations,
+            `Owned end-to-end implementation for 300+ dealership Booster activations;
              overseeing the entire process from DMS feed setup and OpCode configuration
              through advisor onboarding and launch.`,
+            `Operationalized and lead the design of an AI tool that automates Performance Manager
+             call prep which cut hours of manual CRM research and reporting per call.`,
+            `Built 2 production tools that eliminated manual data work: SFTP DMS data pulls
+             and a daily scheduled CSV export pipeline.`
         ]}
     />
 
@@ -26,7 +25,7 @@
         startDate={"September 2024"}
         endDate={"December 2024"}
         info={[
-            `Built an order return tracking system to identify trends in returned products, 
+            `Developed an order return tracking system to identify trends in returned products, 
             helping analyze the reasons behind returns and inform restocking decisions.`,
             `Integrated return shipping costs, detailed order itemization, and a purchase
             order system into an in-house warehouse management software, enhancing its
