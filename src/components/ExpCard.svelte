@@ -42,9 +42,9 @@
                 />
             </svg>
         </div>
-        <div class="flex items-center justify-between">
+        <div class="flex flex-col items-start gap-1 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
             <h4 class="text-success text-lg font-semibold">{title}</h4>
-            <span class="text-sm font-medium text-info bg-info/15 px-2 py-0.5 rounded-full shrink-0 ml-4">{startDate} – {endDate}</span>
+            <span class="text-sm font-medium text-info bg-info/15 px-2 py-0.5 rounded-full whitespace-nowrap">{startDate} – {endDate}</span>
         </div>
     </div>
     {#if !isExpanded}

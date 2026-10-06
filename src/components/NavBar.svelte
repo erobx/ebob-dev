@@ -6,14 +6,17 @@
         const link = event.currentTarget
         const anchorId = new URL(link.href).hash.replace('#', '')
         const anchor = document.getElementById(anchorId)
+        // Keep the section clear of the navbar while it's sticky (mobile)
+        const nav = link.closest('.navbar') as HTMLElement | null
+        const navOffset = nav && getComputedStyle(nav).position === 'sticky' ? nav.offsetHeight : 0
         window.scrollTo({
-            top: anchor?.offsetTop,
+            top: (anchor?.offsetTop ?? 0) - navOffset,
             behavior: 'smooth',
         })
     }
 </script>
 
-<div class="navbar bg-base-300 shadow-sm">
+<div class="navbar bg-base-300 shadow-sm sticky top-0 z-50 md:static">
     <div class="navbar-start">
         <div class="lg:hidden ml-2">
             <ThemeController />
@@ -30,7 +33,6 @@
             </div>
             <ul tabindex="0" role="menu" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                 <li><a href="#about" onclick={handleAnchorClick}>About</a></li>
-                <li><a href="#projects" onclick={handleAnchorClick}>Projects</a></li>
                 <li><a href="#experience" onclick={handleAnchorClick}>Experience</a></li>
                 <li><a href="#contact" onclick={handleAnchorClick}>Contact</a></li>
             </ul>
@@ -39,7 +41,6 @@
         <div class="hidden md:flex">
             <div class="flex justify-evenly">
                 <button class="btn btn-ghost"><a href="#about" onclick={handleAnchorClick}>About</a></button>
-                <button class="btn btn-ghost"><a href="#projects" onclick={handleAnchorClick}>Projects</a></button>
                 <button class="btn btn-ghost"><a href="#experience" onclick={handleAnchorClick}>Experience</a></button>
                 <button class="btn btn-ghost"><a href="#contact" onclick={handleAnchorClick}>Contact</a></button>
             </div>
