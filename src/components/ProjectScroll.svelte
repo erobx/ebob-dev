@@ -61,7 +61,7 @@
 </script>
 
 {#snippet details(proj: Project)}
-    <span class="text-sm font-semibold uppercase tracking-widest text-primary">
+    <span class="text-sm font-semibold tracking-widest text-primary">
         {proj.kind}{proj.org ? ` · ${proj.org}` : ""}
     </span>
     <h2 class="text-3xl lg:text-4xl font-bold tracking-tight">{proj.name}</h2>
@@ -103,7 +103,7 @@
                 <span class="text-lg lg:text-xl text-base-content/80">{proj.stat.label}</span>
             {/if}
             {#if proj.org}
-                <span class="mt-4 text-sm font-semibold uppercase tracking-widest text-base-content/60">
+                <span class="mt-4 text-sm font-semibold tracking-widest text-base-content/60">
                     {proj.org}{proj.role ? ` · ${proj.role}` : ""}
                 </span>
             {/if}

@@ -135,7 +135,7 @@ export function createProjects(): Project[] {
                 "Cut hours of manual CRM research and reporting per call",
                 "Designed around the team's existing call workflow",
             ],
-            stat: { value: "Hours", label: "of manual prep saved per call" },
+            stat: { value: "~2 Hours", label: "of manual prep saved per call" },
             badges: [
                 {name: "AI Product", color: "primary"},
                 {name: "Workflow Design", color: "primary"},
@@ -155,7 +155,7 @@ export function createProjects(): Project[] {
                 "Linked customer orders to suppliers to simplify reordering",
                 "Full-stack features still in use today",
             ],
-            stat: { value: "Returns", label: "turned into restocking insight" },
+            stat: { value: "338+ Returns", label: "turned into restocking insight" },
             badges: [
                 {name: "Analytics", color: "primary"},
                 {name: "Operations", color: "primary"},

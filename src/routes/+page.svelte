@@ -21,36 +21,36 @@
 </script>
 
 <div class="flex flex-col items-center text-center">
-    <div class="hero min-h-[60vh] w-full" style={`background-image: url(${river});`}>
+    <div class="hero min-h-[75vh] w-full" style={`background-image: url(${river});`}>
     <div class="hero-overlay"></div>
-        <div class="hero-content text-neutral-content w-full max-w-4xl px-6 py-12">
-            <div class="hero-card flex flex-col lg:flex-row items-center gap-6 lg:gap-10 w-full bg-neutral/60 backdrop-blur-md rounded-box border border-neutral-content/10 p-6 lg:p-8">
+        <div class="hero-content text-neutral-content w-full max-w-6xl px-6 py-16">
+            <div class="hero-card flex flex-col lg:flex-row items-center gap-8 lg:gap-14 w-full bg-neutral/60 backdrop-blur-md rounded-box border border-neutral-content/10 p-8 lg:p-14">
                 <div class="flex-1 text-center lg:text-left">
-                    <p class="hero-fade text-sm font-semibold uppercase tracking-widest text-primary mb-2">
+                    <p class="hero-fade text-sm lg:text-base font-semibold tracking-widest text-primary mb-3">
                         Product Management · Data Analysis
                     </p>
                     <TextCascade
                         tag="h1"
-                        class="text-4xl lg:text-5xl font-bold tracking-tight mb-3"
+                        class="text-5xl lg:text-7xl font-bold tracking-tight mb-5"
                         text="Evan Robinson"
                         delay={250}
                         stagger={40}
                     />
                     <TextCascade
                         tag="p"
-                        class="text-lg lg:text-xl leading-relaxed text-neutral-content/90"
+                        class="text-xl lg:text-2xl leading-relaxed text-neutral-content/90"
                         text="I'm drawn to the space between customers, data, and engineering, where good products get shaped."
                         by="word"
                         delay={700}
                         stagger={50}
                     />
-                    <div class="hero-fade hero-ctas flex flex-wrap justify-center lg:justify-start gap-3 mt-6">
-                        <a class="btn btn-primary" href="#contact" onclick={handleAnchorClick}>Work with me</a>
-                        <a class="btn btn-outline text-neutral-content" href="#portfolio" onclick={handleAnchorClick}>See case studies</a>
+                    <div class="hero-fade hero-ctas flex flex-wrap justify-center lg:justify-start gap-3 mt-8">
+                        <a class="btn btn-primary btn-lg" href="#contact" onclick={handleAnchorClick}>Work with me</a>
+                        <a class="btn btn-outline btn-lg text-neutral-content" href="#portfolio" onclick={handleAnchorClick}>See case studies</a>
                     </div>
                 </div>
                 <img
-                    class="w-40 lg:w-52 shrink-0 aspect-square object-cover rounded-box ring-1 ring-neutral-content/15"
+                    class="w-48 lg:w-80 shrink-0 aspect-square object-cover rounded-box ring-1 ring-neutral-content/15"
                     src="images/profile-pic.jpeg"
                     alt="Creator smiling with a komodo dragon."
                 />
@@ -58,7 +58,7 @@
         </div>
     </div>
     <section id="services" class="w-full max-w-6xl px-4 py-20 lg:px-8">
-        <p class="text-sm font-semibold uppercase tracking-widest text-primary mb-2">What I bring</p>
+        <p class="text-sm font-semibold tracking-widest text-primary mb-2">What I bring</p>
         <h1 class="text-3xl lg:text-4xl font-bold tracking-tight mb-12">How I work with product teams</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-start">
             {#each services as service}
@@ -76,7 +76,7 @@
         <ProjectScroll projects={projects} />
     </section>
     <section id="toolkit" class="w-full max-w-6xl px-4 py-20 lg:px-8">
-        <p class="text-sm font-semibold uppercase tracking-widest text-primary mb-2">Toolkit</p>
+        <p class="text-sm font-semibold tracking-widest text-primary mb-2">Toolkit</p>
         <h1 class="text-3xl lg:text-4xl font-bold tracking-tight mb-12">Skills &amp; tools</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-start">
             {#each toolkit as group}
