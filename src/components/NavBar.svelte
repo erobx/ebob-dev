@@ -32,14 +32,16 @@
                 </svg>
             </div>
             <ul tabindex="0" role="menu" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a href="#portfolio" onclick={handleAnchorClick}>Portfolio</a></li>
+                <li><a href="#portfolio" onclick={handleAnchorClick}>Case Studies</a></li>
+                <li><a href="#toolkit" onclick={handleAnchorClick}>Toolkit</a></li>
                 <li><a href="#contact" onclick={handleAnchorClick}>Contact</a></li>
             </ul>
         </div>
         <!-- Larger screens: Horizontal menu -->
         <div class="hidden md:flex">
             <div class="flex justify-evenly">
-                <button class="btn btn-ghost"><a href="#portfolio" onclick={handleAnchorClick}>Portfolio</a></button>
+                <button class="btn btn-ghost"><a href="#portfolio" onclick={handleAnchorClick}>Case Studies</a></button>
+                <button class="btn btn-ghost"><a href="#toolkit" onclick={handleAnchorClick}>Toolkit</a></button>
                 <button class="btn btn-ghost"><a href="#contact" onclick={handleAnchorClick}>Contact</a></button>
             </div>
         </div>
