@@ -9,6 +9,13 @@ export interface Badge {
     iconName?: string;
 }
 
+export interface Chart {
+    title: string;
+    caption: string;
+    gridlines: number[];
+    points: { label: string; value: number }[];
+}
+
 export interface Project {
     name: string;
     description: string;
@@ -18,6 +25,8 @@ export interface Project {
     outcomes?: string[];
     // headline number shown when there's no screenshot
     stat?: { value: string; label: string };
+    // drawn in place of the stat card when present
+    chart?: Chart;
     img?: string;
     link?: string;
     repo?: string;
@@ -48,9 +57,9 @@ export function createServices(): Service[] {
         {
             title: "Technical Fluency",
             icon: "mdi:code-braces",
-            description: `My background is Software Engineering. I am proficient
-            with data, integrations, and full-stack development, which ensures
-            ideas become realistic.`
+            description: `My background is Computer Science. I am proficient
+            with data, integrations, and full-stack development, which ensure
+            ideas become reality.`
         },
         {
             title: "Cross-Functional Collaboration",
@@ -144,22 +153,41 @@ export function createProjects(): Project[] {
             ]
         },
         {
-            name: "Returns Analytics",
+            name: "Returns Tracker",
             kind: "Work",
             org: "Solution Cables",
-            description: `Built an order-return tracking system that surfaced trends
-            in returned products, helping the team understand why items came back
-            and make better restocking decisions.`,
+            description: `Built a one-click returns flow on the order page. It records
+            the return, puts stock back on the right shelf, corrects the order's status,
+            and fixes stored profit overnight. It has been used every month since
+            launching in October 2024.`,
             outcomes: [
-                "Added return costs and itemized orders to the warehouse system",
-                "Linked customer orders to suppliers to simplify reordering",
-                "Full-stack features still in use today",
+                "309 returns processed, with 577 units ($4,603) restocked",
+                "Refunded orders drop out of revenue and profit reporting automatically",
+                "Showed that one part drives 19% of all returns, at nearly 4× the baseline rate",
+                "In use 25 of 25 months since launch",
             ],
-            stat: { value: "338+ Returns", label: "turned into restocking insight" },
+            stat: { value: "309", label: "returns processed since launch" },
+            chart: {
+                title: "Return rate by quarter",
+                caption: "Steady between 0.98% and 1.53% for two years.",
+                gridlines: [1.0, 1.5],
+                // TODO: replace estimated quarters with exact values from the dashboard
+                points: [
+                    { label: "Q4 '24", value: 1.18 },
+                    { label: "Q1 '25", value: 1.34 },
+                    { label: "Q2", value: 1.53 },
+                    { label: "Q3", value: 1.07 },
+                    { label: "Q4", value: 0.98 },
+                    { label: "Q1 '26", value: 1.40 },
+                    { label: "Q2", value: 1.47 },
+                    { label: "Q3", value: 1.26 },
+                ],
+            },
             badges: [
-                {name: "Analytics", color: "primary"},
+                {name: "Workflow Design", color: "primary"},
                 {name: "Operations", color: "primary"},
-                {name: "Production", color: "primary"},
+                {name: "Data Analysis", color: "primary"},
+                {name: "Full-Stack", color: "primary"},
             ]
         },
         {

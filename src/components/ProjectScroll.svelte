@@ -2,6 +2,7 @@
     import type { Project } from "$lib/data";
     import { onMount } from "svelte";
     import Icon from "@iconify/svelte";
+    import LineChart from "./LineChart.svelte";
 
     let { projects }: { projects: Project[] } = $props()
     let active: number = $state(0)
@@ -94,7 +95,9 @@
 {/snippet}
 
 {#snippet visual(proj: Project)}
-    {#if proj.img}
+    {#if proj.chart}
+        <LineChart chart={proj.chart} />
+    {:else if proj.img}
         <img class="w-full h-full object-cover object-top" src={proj.img} alt={proj.name} loading="lazy" />
     {:else}
         <div class="stat-card w-full h-full flex flex-col justify-center items-center text-center gap-3 p-8">
